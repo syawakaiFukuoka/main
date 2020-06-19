@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta discription="写話会福岡, 福岡市内で毎月第一土曜日を目安に、テーマを決めて写真について話す会です。オンラインでの投稿企画も実施しています。写真に詳しくない方も歓迎！">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP" rel="stylesheet">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'qua5vwq',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <title>写話会福岡-top</title>
+</head>
+<body>
+
+
+<div id="app">
+  
+  <div class="layout-pc">
+    <header>
+      <h1><a href="#">写話会福岡</a></h1>
+        <div id="header__menu">
+          <!-- <slide class="sp"> -->
+          <ul>
+            <li>
+              <a href="#about">
+                <span>ABOUT</span>
+              </a>
+            </li>
+            <li>
+              <a href="#photo">
+                <span>PHOTO?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#event">
+                <span>EVENT</span>
+              </a>
+            </li>
+          </ul>
+        <!-- <slide> -->
+      </div>
+    </header>
+
+
+    <div class="kv-area slider-outer">
+      <transition name="fade">
+        <div class="slider-inner" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
+          <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img">
+        </div>
+      </transition>
+    </div>
+  </div>
+
+  <div class="main-area">
+      <section class="content-area">
+        <div class="content-area__outer" id="about">
+          <fade-in-component>
+            <div class="content__title">
+              <span>ABOUT</span> 
+              <h2>写話会福岡について</h2>
+            </div>
+         </fade-in-component>
+
+          <div class="content-area__inner about-content">
+            <fade-in-component>
+              <div class="content__text-block">
+                <p>あらゆる時間、あらゆる場所で目にする写真。</p>
+                <p>絶え間なく流れるタイムラインのように、1枚の写真をじっくり眺める機会は少なくなっているかもしれません。<br>
+                  「いいね」だけで終わらず、じっくりと写真について話すことができれば、と考え写話会という場をつくりました。</p>
+                <p>特別な専門知識はなくても大丈夫。写真に興味がある、話を楽しみたい、話を聞いてみたい、という方ならどなたでも歓迎します。</p>
+              </div>
+            </fade-in-component>
+          </div>
+        </div>
+      </section>
+    </fade-in-component>
+
+    <fade-in-component>
+      <section class="content-area">
+        <div class="content-area__outer" id="photo">
+          <fade-in-component>
+            <div class="content__title">
+              <span>PHOTO?</span>
+              <h2>「写真」について</h2>
+            </div>
+            <div class="content-area__inner">
+            <div class="content__text-block">
+              <p>写真は「プリント紙に印刷されたもの」以外もお持ちより頂けます。</p>
+              <p>たとえば、下記などを想定しています。</p>
+              <p>他にも「これは写真だな」とお考えになったものをご持参ください。</p>
+            </div>
+
+            <div class="content__list-block">
+              <ul>
+                <li>プリントされた写真</li>
+                <li>雑誌、写真集、図版、など紙媒体・印刷物</li>
+                <li>PC・タブレットやスマートフォンのデバイス内にある写真/画像</li>
+                <li>SNSにあがった写真/画像</li>
+              </ul>
+            </div>
+          </fade-in-component>
+          </div>
+        </div>
+      </section>
+    </fade-in-component>
+
+    <fade-in-component>
+      <section class="content-area">
+          <div class="content-area__outer" id="event">
+            <fade-in-component>
+              <div class="content__title">
+                <span>EVENT</span> 
+                <h2>開催予定イベント</h2>
+              </div>
+            </fade-in-component>
+
+            <fade-in-component>
+              <div class="content__event-img">
+                <p><img src="img/event_img01.jpg" alt="写話会オンラインの詳細"></p>
+              </div>
+              <div class="content__event-title">
+                <div class="content__event-title__block">
+                  <h3>On:Vol.6 「雨模様」</h3>
+                  <p>2020.6.10 ～ 福岡県の梅雨明けまで</p>
+                </div>
+            </fade-in-component>
+            </div>
+            <div class="content-area__inner">
+              <fade-in-component>
+              <div class="content__text-block">
+                <p>おおむね月1回程度、twitterで開催している投稿企画です。</p>
+                <p>テーマにあった写真をツイートしていただいています。</p>
+                <p><br>以下2つのハッシュタグをつけて「雨のある写真」をご投稿ください。</p>
+                <ul class="tag-item">
+                  <li>#雨模様</li>
+                  <li>#写話会福岡</li>
+                </ul>
+                <p>ご参加を希望する方、詳細を確認したい方はtwitterをご覧ください。</p>
+              </div>
+              </fade-in-component>
+
+              <fade-in-component>
+              <div class="content__button">
+                <button tabindex="0" role="button" onclick="location.href='https://twitter.com/maPhotalk/status/1270311958126845952','_blank'">
+                    Twitterで詳細をみる
+                </button>
+              </div>
+            </fade-in-component>
+          </div>
+        </div>
+      </section>
+    </fade-in-component>
+  </div>
+
+  <footer>
+    <p>写話会福岡(しゃわかいふくおか)</p>
+    <ul>
+      <li><a href="https://www.instagram.com/shawakai_fukuoka/" target="_blank">instagram</a></li>
+      <li><a href="https://twitter.com/maPhotalk" target="_blank">twitter</a></li>
+      <li><a href="https://coten.pics/maPhotalk" target="_blank">coten</a></li>
+      <li><a href="https://note.com/maphotalk" target="_blank">note</a></li>
+    </ul>
+    <div class="copyright">
+      <small>(c) Copyright SyawakaiFukuoka. All Rights reserved.</small>
+    </div>
+  </footer>
+
+</div>  
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
