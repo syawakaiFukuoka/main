@@ -47,8 +47,9 @@ h2 {
   font-size: 2.4rem;
   margin-top: 10px;
 }
-h3,li {
+h3 {
   font-size: 2rem;
+  margin-bottom: .5rem;
 }
 p {
   font-size: 1.5rem;
@@ -261,8 +262,8 @@ header {
       margin: 0 auto;
       z-index: 30;
       p {
-        font-size: 1.15rem;
-        line-height: 2.15;
+        font-size: 1.1rem;
+        line-height: 2.8;
         margin-bottom: 30px;
         letter-spacing: 0.3rem;
       }
@@ -408,30 +409,25 @@ header {
       }
     }
   @include sp  {
+    &__title {
+      span {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
     &__text-block {
       width: 80vw;
-    }
-    &__photo-block {
-      p {
-        left: -10%;
-      }
-      img {
-        margin-top: 20px;
-        max-width: 280px;
-        height: auto;
-      }
-      ::after  {
-        width: 180px;
-        height: 180px;
-        left: 60%;
-        bottom: -40%;
-      }
     }
     &__event-title {
       width: 85vw;
       p {
         font-size: 1.3rem;
       }
+    }
+    &__list-block ul li {
+      font-size: 1rem;
     }
     &__button {
       margin: 40px auto 0;

@@ -39,8 +39,9 @@ h2 {
   margin-top: 10px;
 }
 
-h3, li {
+h3 {
   font-size: 2rem;
+  margin-bottom: .5rem;
 }
 
 p {
@@ -285,8 +286,8 @@ header #header__menu ul li {
 }
 
 .content__text-block p {
-  font-size: 1.15rem;
-  line-height: 2.15;
+  font-size: 1.1rem;
+  line-height: 2.8;
   margin-bottom: 30px;
   letter-spacing: 0.3rem;
 }
@@ -454,28 +455,23 @@ header #header__menu ul li {
 }
 
 @media (max-width: 768px) {
+  .content__title span {
+    font-size: 1.6rem;
+  }
+  .content__title h2 {
+    font-size: 2.2rem;
+  }
   .content__text-block {
     width: 80vw;
-  }
-  .content__photo-block p {
-    left: -10%;
-  }
-  .content__photo-block img {
-    margin-top: 20px;
-    max-width: 280px;
-    height: auto;
-  }
-  .content__photo-block ::after {
-    width: 180px;
-    height: 180px;
-    left: 60%;
-    bottom: -40%;
   }
   .content__event-title {
     width: 85vw;
   }
   .content__event-title p {
     font-size: 1.3rem;
+  }
+  .content__list-block ul li {
+    font-size: 1rem;
   }
   .content__button {
     margin: 40px auto 0;
