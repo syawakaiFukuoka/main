@@ -54,6 +54,9 @@ h3 {
 p {
   font-size: 1.5rem;
 }
+.bold {
+  font-weight: bold;
+}
 /*a*/
 a { 
   color: #333;
@@ -225,6 +228,7 @@ header {
 }
 .tag-item {
   display: flex;
+  font-weight: bold;
   margin-bottom: 8rem;
   li {
     font-size: 1rem;
@@ -316,9 +320,24 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-        img {
-          max-width: 90vw;
-        }
+      // position: relative;
+      img {
+        max-width: 90vw;
+      }
+      // &:after {
+      //   content: "new!";
+      //   position: absolute;
+      //   top: 0;
+      //   right: 6.5%;
+      //   width: 70px;
+      //   height: 30px;
+      //   background: #ff744d;
+      //   color: #fff;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   font-size: 1.5rem;
+      // }
     }
     &__event-title {
       width: 30rem;

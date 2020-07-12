@@ -48,6 +48,10 @@ p {
   font-size: 1.5rem;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /*a*/
 a {
   color: #333;
@@ -243,6 +247,7 @@ header #header__menu ul li {
 
 .tag-item {
   display: flex;
+  font-weight: bold;
   margin-bottom: 8rem;
 }
 
