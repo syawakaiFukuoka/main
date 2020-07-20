@@ -232,8 +232,8 @@ header {
   li {
     font-size: 1rem;
     padding: 5px 10px;
-    border-radius: 4px;
-    background: rgb(104,200,255);
+    border-radius: 12px;
+    background: #4686F2;
     color: #fff;
   }
   :not(:last-child) {
@@ -272,9 +272,9 @@ header {
       }
     }
     &__list-block {
-      width: 50vw;
-      margin: 0 auto;
-      padding: 30px 40px;
+      width: 65vw;
+      margin: 0 auto 30px;
+      padding: 30px;
       border: dashed 1px #cecece;
       background: #fff;
       p {
@@ -419,6 +419,7 @@ header {
     }
   @include sp  {
     &__title {
+      margin-bottom: 60px;
       span {
         font-size: 1.6rem;
       }
@@ -438,7 +439,7 @@ header {
     &__button {
       margin: 40px auto 0;
       button {
-        width: 70vw;
+        width: 80vw;
         font-size: 14px;
       }
     }
