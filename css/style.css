@@ -71,7 +71,13 @@ a:hover {
   cursor: pointer;
 }
 
-/*-----header-------*/
+.atention {
+  background: #e6e6e6;
+  padding: 1rem;
+  font-size: 12px !important;
+}
+
+/*-----header-rem------*/
 header {
   width: 100vw;
   display: flex;
@@ -345,6 +351,12 @@ header h1 {
   color: transparent;
   -webkit-text-stroke-color: #000;
   -webkit-text-stroke-width: 1px;
+  transition: .2s;
+}
+
+.content__title span:hover {
+  letter-spacing: 1.3rem;
+  transition: .2s;
 }
 
 .content__text-block {
