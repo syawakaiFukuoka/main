@@ -9,7 +9,9 @@
   <meta property="og:site_name" content="写話会福岡ウェブサイト" />
   <meta property="og:image" content="https://syawakaifukuoka.github.io/main/img/ogp_img.jpg" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@maPhotalk" />
+  <meta name="twitter:site" content="https://syawakaifukuoka.github.io/main/index.html" />
+  <meta name="twitter:image" content="https://syawakaifukuoka.github.io/main/img/ogp_img.jpg" />
+  <meta name="twitter:title" content="写話会福岡">
   <title>写話会福岡-top</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -38,39 +40,46 @@
 <body>
 
 <div id="app">  
-  <div class="layout-pc">
-    <header>
-      <h1><a href="#">写話会福岡</a></h1>
-        <div id="header__menu">
-          <!-- <slide class="sp"> -->
-          <ul>
-            <li>
-              <a href="#about">
-                <span>ABOUT</span>
-              </a>
-            </li>
-            <li>
-              <a href="#photo">
-                <span>PHOTO?</span>
-              </a>
-            </li>
-            <li>
-              <a href="#event">
-                <span>EVENT</span>
-              </a>
-            </li>
-          </ul>
-        <!-- <slide> -->
-      </div>
-    </header>
+  <header>
+    <h1><a href="#">写話会福岡</a></h1>
+  </header>
 
-    <div class="kv-area slider-outer">
-      <transition name="fade">
-        <div class="slider-inner" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
-          <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img">
-        </div>
-      </transition>
-    </div>
+  <div class="kv-area slider-outer">
+    <transition name="fade">
+      <div class="slider-inner" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
+        <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img">
+      </div>
+    </transition>
+  </div>
+
+  <div id="anker-link">
+    <!-- <slide class="sp"> -->
+    <ul>
+      <li>
+        <a href="#about">
+          <span>ABOUT</span>
+        </a>
+      </li>
+      <li>
+        <a href="#photo">
+          <span>PHOTO?</span>
+        </a>
+      </li>
+      <li>
+        <a href="#event">
+          <span>EVENT</span>
+        </a>
+      </li>
+    </ul>
+  <!-- <slide> -->
+  </div>
+
+  <div class="sns-area">
+    <ul>
+      <li><a href="https://twitter.com/maPhotalk" target="_blank"><img src="img/sns_1.png" alt=""></a></li>
+      <li><a href="https://www.instagram.com/shawakai_fukuoka/" target="_blank"><img src="img/sns_2.png" alt=""></a></li>
+      <li><a href="https://note.com/maphotalk" target="_blank"><img src="img/sns_3.png" alt=""></a></li>
+    </ul>
   </div>
 
   <div class="main-area">
@@ -113,6 +122,7 @@
             </div>
 
             <div class="content__list-block">
+              <p>ご持参写真の一例</p>
               <ul>
                 <li>プリントされた写真</li>
                 <li>雑誌、写真集、図版、など紙媒体・印刷物</li>
