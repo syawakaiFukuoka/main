@@ -127,9 +127,8 @@ header h1 {
 @media (max-width: 768px) {
   #anker-link {
     position: relative;
-    height: 60px;
+    height: 40px;
     justify-content: center;
-    background: #e6e6e6;
   }
   #anker-link ul {
     width: 100%;
@@ -147,6 +146,7 @@ header h1 {
     right: -2rem;
     border-right: 1px solid #333;
     height: 100%;
+    transform: rotate(30deg);
   }
   #anker-link ul li:hover {
     transform: unset;
@@ -199,6 +199,30 @@ header h1 {
   margin: 0 auto;
 }
 
+.slider-outer::before, .slider-outer::after {
+  position: absolute;
+  top: 5%;
+  padding: 0.5rem;
+  writing-mode: vertical-rl;
+  background: #fff;
+  color: #333;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.slider-outer::before {
+  content: "特別な知識は要りません。お気軽にご参加ください。";
+  right: 10%;
+  z-index: 20;
+  animation: fadeinRitht .9s ease-in 1;
+}
+
+.slider-outer::after {
+  content: "写話会福岡は、写真についてゆるく話す場です。";
+  right: 5%;
+  animation: fadeinRitht 1s ease-in 1;
+}
+
 .slider-inner {
   position: absolute;
   width: 100vw;
@@ -221,7 +245,31 @@ header h1 {
 
 @media (max-width: 768px) {
   .slider-outer, .slider-inner, .slide-img {
-    height: 40Vh;
+    height: 60Vh;
+  }
+  .slider-outer::before {
+    top: 5%;
+    right: 15%;
+    font-size: .7rem;
+  }
+  .slider-outer::after {
+    top: 5%;
+    right: 5%;
+    font-size: .7rem;
+  }
+}
+
+@keyframes fadeinRitht {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -261,7 +309,7 @@ header h1 {
 }
 
 .tag-item li {
-  font-size: 1rem;
+  font-size: .8rem;
   padding: 5px 10px;
   border-radius: 12px;
   background: #4686F2;
