@@ -21,10 +21,6 @@ body {
   }
 }
 p, li { 
-  font {
-    size: 1.4rem;
-    color: #666;
-  }
   line-height: 1.5;
   @mixin mediaquery  {
     font-size: 1.2rem;
@@ -50,6 +46,9 @@ h3 {
 }
 p {
   font-size: 1.5rem;
+  @include sp {
+    font-size: .9rem;
+  }
 }
 .bold {
   font-weight: bold;
@@ -193,7 +192,7 @@ header {
     background: #fff;
     color: #333;
     font: {
-      size: .8rem;
+      size: 1.3rem;
       weight: 700;
     }
   }
@@ -201,15 +200,12 @@ header {
     content: "特別な知識は要りません。お気軽にご参加ください。";
     z-index: 20;
     animation: fadeinRitht .9s ease-in 1;
+    right: 80px;
   }
   &::after {
     content: "写話会福岡は、写真についてゆるく話す場です。";
     animation: fadeinRitht 1s ease-in 1;
-  }
-  @include pc {
-    &::before,&::after {
-      display: none;
-    }
+    right: 40px;
   }
 }
 .slider-inner{
@@ -230,6 +226,10 @@ header {
 }
 @include sp  {
   .slider-outer{
+    font: {
+      size: .8rem;
+      weight: 700;
+    }
     &::before {
       top: 5%;
       right: 15%;
@@ -253,12 +253,13 @@ header {
   .slider-outer{
     &::before, &::after {
       top: 2%;
+      font-size: 1.4rem;
     }
     &::before {
-      right: 9%;
+      right: 110px;
     }
     &::after {
-      right: 3%;
+      right: 60px;
     }
   }
 }
@@ -395,7 +396,7 @@ header {
       margin: 0 auto;
       z-index: 30;
       p {
-        font-size: 14px;
+        // font-size: 1.2rem;
         line-height: 2.4;
         margin-bottom: 30px;
         letter-spacing: 0.125rem;

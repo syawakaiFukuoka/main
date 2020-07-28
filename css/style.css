@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /*base*/
-.sp {
-  min-width: 769px;
-  display: none;
-}
-
 * {
   scroll-behavior: smooth;
 }
@@ -17,11 +12,6 @@ body {
 
 p, li {
   line-height: 1.5;
-}
-
-p font, li font {
-  size: 1.4rem;
-  color: #666;
 }
 
 h1, h2, h3, h4, p {
@@ -49,8 +39,18 @@ p {
   font-size: 1.5rem;
 }
 
+@media (max-width: 767px) {
+  p {
+    font-size: .9rem;
+  }
+}
+
 .bold {
   font-weight: bold;
+}
+
+.under {
+  background: linear-gradient(transparent 60%, #a8eaff 50%);
 }
 
 /*a*/
@@ -88,7 +88,7 @@ header h1 {
   margin: 1rem auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header h1 {
     font-size: 1.5rem;
   }
@@ -124,7 +124,7 @@ header h1 {
   transform: rotate(270deg) translateY(2rem) scale(1.5);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #anker-link {
     position: relative;
     height: 40px;
@@ -142,10 +142,10 @@ header h1 {
   #anker-link ul li:not(:last-child)::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 10%;
     right: -2rem;
     border-right: 1px solid #333;
-    height: 100%;
+    height: 90%;
     transform: rotate(30deg);
   }
   #anker-link ul li:hover {
@@ -206,21 +206,21 @@ header h1 {
   writing-mode: vertical-rl;
   background: #fff;
   color: #333;
-  font-size: .8rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
 .slider-outer::before {
   content: "特別な知識は要りません。お気軽にご参加ください。";
-  right: 10%;
   z-index: 20;
   animation: fadeinRitht .9s ease-in 1;
+  right: 80px;
 }
 
 .slider-outer::after {
   content: "写話会福岡は、写真についてゆるく話す場です。";
-  right: 5%;
   animation: fadeinRitht 1s ease-in 1;
+  right: 40px;
 }
 
 .slider-inner {
@@ -243,9 +243,10 @@ header h1 {
   opacity: 0;
 }
 
-@media (max-width: 768px) {
-  .slider-outer, .slider-inner, .slide-img {
-    height: 60Vh;
+@media (max-width: 767px) {
+  .slider-outer {
+    font-size: .8rem;
+    font-weight: 700;
   }
   .slider-outer::before {
     top: 5%;
@@ -256,6 +257,22 @@ header h1 {
     top: 5%;
     right: 5%;
     font-size: .7rem;
+  }
+}
+
+@media (orientation: landscape) {
+  .slider-outer, .slider-inner, .slide-img {
+    height: 80Vh;
+  }
+  .slider-outer::before, .slider-outer::after {
+    top: 2%;
+    font-size: 1.4rem;
+  }
+  .slider-outer::before {
+    right: 110px;
+  }
+  .slider-outer::after {
+    right: 60px;
   }
 }
 
@@ -278,7 +295,7 @@ header h1 {
   width: 100vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-area .content-area:first-child {
     margin-top: 0;
   }
@@ -296,7 +313,7 @@ header h1 {
   margin: 0 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .content-area {
     margin-top: 20px;
   }
@@ -362,15 +379,15 @@ header h1 {
   filter: contrast(0.8);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about-content {
     width: 100vw;
-    max-width: 320px;
     position: initial;
     display: block;
   }
   .about-content .content__image-container {
     width: 100%;
+    max-width: 320px;
     min-height: 270px;
     transform: scale(0.5);
   }
@@ -414,7 +431,6 @@ header h1 {
 }
 
 .content__text-block p {
-  font-size: 14px;
   line-height: 2.4;
   margin-bottom: 30px;
   letter-spacing: 0.125rem;
@@ -599,7 +615,7 @@ header h1 {
   opacity: .6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .content__title {
     margin-bottom: 60px;
   }
@@ -610,7 +626,7 @@ header h1 {
     font-size: 1.8rem;
   }
   .content__text-block {
-    width: 80vw;
+    width: 80%;
   }
   .content__event-title {
     width: 85vw;
