@@ -1,19 +1,15 @@
 /*base*/
-$pc: 769px;  // PC
+$pc: 768px;  // PC
 @mixin pc {
   @media (min-width: ($pc)) {
     @content;
   }
 }
-$sp: 768px;  // SP
+$sp: 767px;  // SP
 @mixin sp {
   @media (max-width: ($sp)) {
     @content;
   }
-}
-.sp {
-  min-width: 769px;
-  display: none;
 }
 
 * {  scroll-behavior: smooth;}
@@ -57,6 +53,9 @@ p {
 }
 .bold {
   font-weight: bold;
+}
+.under {
+  background: linear-gradient(transparent 60%, #a8eaff 50%);
 }
 /*a*/
 a { 
@@ -133,10 +132,10 @@ header {
           &:not(:last-child)::after {
             content: "";
             position: absolute;
-            top: 0;
+            top: 10%;
             right: -2rem;
             border-right: 1px solid #333;
-            height: 100%;
+            height: 90%;
             transform: rotate(30deg);
           }
           &:hover {
@@ -200,14 +199,17 @@ header {
   }
   &::before {
     content: "特別な知識は要りません。お気軽にご参加ください。";
-    right: 10%;
     z-index: 20;
     animation: fadeinRitht .9s ease-in 1;
   }
   &::after {
     content: "写話会福岡は、写真についてゆるく話す場です。";
-    right: 5%;
     animation: fadeinRitht 1s ease-in 1;
+  }
+  @include pc {
+    &::before,&::after {
+      display: none;
+    }
   }
 }
 .slider-inner{
@@ -227,9 +229,6 @@ header {
   opacity: 0;
 }
 @include sp  {
-  .slider-outer,.slider-inner, .slide-img{
-    height: 60Vh;
-  }
   .slider-outer{
     &::before {
       top: 5%;
@@ -247,6 +246,23 @@ header {
     }
   }
 }
+@media (orientation: landscape){
+  .slider-outer,.slider-inner, .slide-img{
+    height: 80Vh;
+  }
+  .slider-outer{
+    &::before, &::after {
+      top: 2%;
+    }
+    &::before {
+      right: 9%;
+    }
+    &::after {
+      right: 3%;
+    }
+  }
+}
+
 @keyframes fadeinRitht {
   0% {
     opacity: 0;
@@ -334,11 +350,11 @@ header {
   }
   @include sp {
     width: 100vw;
-    max-width: 320px;
     position: initial;
     display: block;
     .content__image-container {
       width: 100%;
+      max-width: 320px;
       min-height: 270px;
       transform: scale(0.5);
       :nth-child(1) {
@@ -549,7 +565,7 @@ header {
       }
     }
     &__text-block {
-      width: 80vw;
+      width: 80%;
     }
     &__event-title {
       width: 85vw;
