@@ -266,7 +266,6 @@ header h1 {
   }
   .slider-outer::before, .slider-outer::after {
     top: 2%;
-    font-size: 1.4rem;
   }
   .slider-outer::before {
     right: 110px;
