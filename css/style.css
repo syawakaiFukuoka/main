@@ -500,6 +500,7 @@ header h1 {
 
 .content__event-img img {
   max-width: 90vw;
+  box-shadow: 2px 2px 5px #e6e6e6;
 }
 
 .content__event-title {
