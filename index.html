@@ -47,7 +47,7 @@
   <div class="kv-area slider-outer">
     <transition name="fade">
       <div class="slider-inner" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
-        <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img"　loading="lazy" width="100" height="100">
+        <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img" width="100" height="100">
       </div>
     </transition>
   </div>
