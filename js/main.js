@@ -31,6 +31,11 @@ window.onload=function(){
     el: '#app',
     //スライダー
     data: {
+      eventTitle: 'Vol.9 「Outdoor」+ On:Vol.7',
+      eventVolOn: 'Vol.9',
+      eventVolOff: 'Vol.7',
+      eventDateOn: '8/8(土) 18:00～',
+      eventDateOff: '2020.7.12～8/31',
       current_slide: 0,　//追加
       slides: [
         {img: 'img/kv_img01.jpg'},

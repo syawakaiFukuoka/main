@@ -501,6 +501,11 @@ header h1 {
 .content__event-img img {
   max-width: 90vw;
   box-shadow: 2px 2px 5px #e6e6e6;
+  transition: .3s ease-out;
+}
+
+.content__event-img img:hover {
+  transform: scale(0.95);
 }
 
 .content__event-title {
@@ -584,25 +589,19 @@ header h1 {
   border: none;
 }
 
-.content__button :hover ::before, .content__button :hover ::after {
+.content__button :hover::before, .content__button :hover ::after {
   content: "";
   position: absolute;
   width: 10px;
   height: 10px;
 }
 
-.content__button :hover ::before {
+.content__button :hover::before {
   border-bottom: 1px solid #333;
   border-right: 1px solid #333;
-  top: 35%;
+  top: 40%;
   right: 5%;
   transform: rotate(-45deg);
-}
-
-.content__button :hover ::after {
-  border-bottom: 1px solid #333;
-  bottom: 50%;
-  right: 7%;
 }
 
 .content__link {

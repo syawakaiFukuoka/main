@@ -152,9 +152,9 @@
               </div>
               <div class="content__event-title">
                 <div class="content__event-title__block">
-                  <h3>Vol.9 「Outdoor」+ On:Vol.7</h3>
-                  <p><span class="bold">Vol.9</span> 開催日:8/8(土) 18:00～</p>
-                  <p><span class="bold">Vol.7</span> 投稿期間:2020.7.12～8/31</p>
+                  <h3>{{ eventTitle }}</h3>
+                  <p><span class="bold">{{ eventVolOn }}</span> 開催日:{{ eventDateOn }}</p>
+                  <p><span class="bold">{{ eventVolOff }}</span> 投稿期間:{{ eventDateOff }}</p>
                 </div>
             </fade-in-component>
             </div>
@@ -175,7 +175,7 @@
 
               <fade-in-component>
               <div class="content__button">
-                <button tabindex="0" role="button" onclick="location.href='https://note.com/maphotalk/n/n06f56cc8eb52','_blank'">
+                <button tabindex="0" role="button" onclick="window.open('https://note.com/maphotalk/n/n06f56cc8eb52','_blank')">
                     noteで詳細をみる
                 </button>
               </div>
@@ -194,6 +194,7 @@
         </div>
       </section>
     </fade-in-component>
+
   </div>
 
   <footer>
