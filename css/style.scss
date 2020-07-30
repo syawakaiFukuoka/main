@@ -56,6 +56,9 @@ p {
 .under {
   background: linear-gradient(transparent 60%, #a8eaff 50%);
 }
+.under-gray {
+  background: linear-gradient(transparent 60%, #e6e6e6 50%);
+}
 /*a*/
 a { 
   color: #333;
@@ -334,12 +337,22 @@ header {
     margin: 0 auto;
     transform: scale(0.6);
     top: 0;
+    img {
+      border: 10px solid #fff;
+      box-shadow: 2px 2px 4px transparent;
+      position: relative;
+      overflow: hidden;
+      transition: .2s ease-in;
+    }
     :nth-child(1) {
       position: absolute;
       bottom: 30%;
       left: 0;
       transform: rotate(-3deg) scale(1.1);
       filter: contrast(.9);
+      &:hover {
+        transform: rotate(-15deg) scale(1.2);
+      }
     }
     :nth-child(2) {
       position: absolute;
@@ -347,6 +360,9 @@ header {
       right: -80%;
       transform: scale(0.9) rotate(5deg);
       filter: contrast(.8);
+      &:hover {
+        transform: rotate(15deg) scale(1);
+      }
     }
   }
   @include sp {
@@ -462,6 +478,7 @@ header {
         transition: .3s ease-out;
         &:hover {
           transform: scale(0.95);
+          box-shadow: 20px 20px 0px #e6e6e6;
         }
       }
     }
