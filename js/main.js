@@ -1,3 +1,31 @@
+//fadein
+Vue.component('FadeInComponent', {
+  template: `
+    <div :class="{fadeIn: visible}">
+      <slot v-show="visible"></slot>
+    </div>
+  `,
+  data() {
+    return {
+      visible: false
+    };
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (!this.visible) {
+        var top = this.$el.getBoundingClientRect().top;
+        this.visible = top < window.innerHeight + 100;
+      }
+    }
+  }
+});
+
 window.onload=function(){
   new Vue({
     el: '#app',
