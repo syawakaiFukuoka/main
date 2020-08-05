@@ -1,0 +1,109 @@
+/*base*/
+$pc: 768px;  // PC
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+$sp: 767px;  // SP
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.exhibition {
+    &__area {
+        background: #fafafa;
+        h3 {
+            font-size: 2rem;
+            padding-top: 2rem;
+        }
+    }
+    &__title-block {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    &__inner {
+        padding: 2rem;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    &__item {
+        width: calc(100% / 4 - 15px);
+        min-width: 200px;
+        height: auto;
+        margin: 0 .5rem 1rem 0;
+        padding: 0.2rem;
+        background: #fff;
+        box-shadow: 2px 2px 5px #e6e6e6;
+        word-break: break-all;
+        // &:nth-child(even) {
+        //     margin-right: 0;
+        // }
+        h4 {
+            font-size: 1rem;
+            margin-bottom: .5rem;
+        }
+        p,li {
+            font-size: .75rem;
+        }
+        &__img {
+            overflow: hidden;
+            position: relative;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+                transition: .2s ease-in;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        &__box {
+            padding: 1rem;
+            &__top {
+                margin-bottom: 2rem;
+                padding-bottom: 1.5rem;
+                border-bottom: 2px solid #e7e7e7;
+            }
+            &__bottom {
+                li {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+    &__dates {
+        text-align: center;
+    }
+    @include sp {
+        &__inner {
+            padding: 1rem;
+        }
+        &__item {
+            display: flex;
+            margin: 0 auto 1rem;
+            width: 100%;
+            a {
+                display: flex;
+            }
+            h4 {
+                margin-top: 2rem;
+            }
+            &__img {
+                width: calc(100% / 2);
+                align-items: center;
+                display: flex;
+            }
+            &__box {
+                width: calc(100% / 2);
+            }
+        }
+    }
+}
