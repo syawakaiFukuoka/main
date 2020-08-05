@@ -1,4 +1,4 @@
-//humberger menu
+//humberger menu jQ
 jQuery(document).ready(function(){
   /*open*/
   $('.header__icon').on('click',function(){
