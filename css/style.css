@@ -22,7 +22,7 @@ h1 {
   font-family: ta-hougan-k500, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 h2 {
@@ -94,7 +94,8 @@ a:hover {
 
 @media (min-width: 768px) {
   .header__block h1 {
-    margin-left: 4rem;
+    margin-left: 3rem;
+    font-size: 1.8rem;
   }
 }
 

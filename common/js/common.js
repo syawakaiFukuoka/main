@@ -1,5 +1,5 @@
 //humberger menu JQ
-$(function(){
+$(function() {
   /*open*/
   $('.header__icon').on('click',function(){
     $('.sidebar').css(

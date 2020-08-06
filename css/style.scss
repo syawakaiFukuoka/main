@@ -34,7 +34,7 @@ h1 {
     font-family: ta-hougan-k500, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 h2 { 
   font-size: 2.4rem;
@@ -89,7 +89,8 @@ a {
     justify-content: space-between;
     @include pc {
       h1 {
-        margin-left: 4rem;
+        margin-left: 3rem;
+        font-size: 1.8rem;
       }
     }
   }
