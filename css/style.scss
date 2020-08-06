@@ -108,23 +108,6 @@ a {
 }
 /*sidebar*/
 .sidebar {
-  padding:16px;
-  width: 100vw;
-  height:100vh;
-  position:fixed;
-  background-color:#999;
-  top:0;
-  right:-220px;
-  z-index:160;
-  box-shadow:0 0 10px rgba(0,0,0,0.5);
-  box-sizing:border-box;
-  display:none;
-  &__btn {
-    display:flex;
-    i {
-      margin-left: auto;
-    }
-  }
   &__inner {
     margin: 10% auto;
   }
@@ -154,22 +137,36 @@ a {
       transform: scale(1.2);
     }
   }
-  &__icon {
-    font-size:28px;
-    color:#654;
-  }
 }
-.sidebar-bg {
-  background-color:#558;
-  width:100vw;
-  height:100vh;
-  opacity:0;
-  position:fixed;
-  top:0;
-  right:0;
-  z-index:150;
-  display:none;
+/* ----- hamburger ----- */
+/* vue-burger-menu*/
+.bm-item-list>* {
+  display: block!important;
 }
+.bm-menu {
+  background-color: #999!important;
+}
+.bm-burger-button {
+  position: fixed;
+  width: 25px!important;
+  height: 20px!important;
+  top: 20px!important;
+  right: 20px!important;
+  cursor: pointer;
+}
+
+.bm-overlay {
+  background: transparent!important;
+}
+.bm-cross-button {
+  position: absolute;
+  right: 5px!important;
+  top: 20px!important;;
+}
+.bm-cross {
+  background: #fff!important;
+}
+
 
 /*anker-link */
 #anker-link {

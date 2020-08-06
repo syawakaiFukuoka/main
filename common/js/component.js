@@ -1,25 +1,11 @@
-//Vue
-
 //header
 Vue.component('header-component', {
   template: `
   <header class="header">
   <div class="header__block">
-  <h1><a href="#">写話会福岡</a></h1>
-    <div class="header__menu">
-      <i class="fas fa-bars header__icon"></i>
-    </div>
+    <h1><a href="#">写話会福岡</a></h1>
   </div>
-  </header>`
-})
-
-//sidebar
-Vue.component('sidebar-component', {
-  template: `
-  <aside class="sidebar">
-    <div class="sidebar__btn">
-      <i class="fas fa-times-circle sidebar__icon"></i>
-    </div>
+  <slide right width="400">
     <nav class="sidebar__inner">
       <div class="sidebar__box">
         <h2 class="sidebar__ttl"><a href="https://syawakaifukuoka.github.io/main/index.html">トップページ</a></h2>
@@ -36,9 +22,9 @@ Vue.component('sidebar-component', {
         </ul>
       </div>
     </nav>
-  </aside>
-  <div class="sidebar-bg"></div>
-  `
+  </slide>
+  <div id="page-wrap"></div>
+  </header>`
 })
 
 //footer
@@ -97,3 +83,7 @@ Vue.component('FadeInComponent', {
     }
   }
 });
+
+
+const {Slide} = window['vue-burger-menu'];
+Vue.component('slide', Slide);
