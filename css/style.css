@@ -168,6 +168,13 @@ a:hover {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .bm-burger-button {
+    top: 15px !important;
+    right: 15px !important;
+  }
+}
+
 .bm-overlay {
   background: transparent !important;
 }
