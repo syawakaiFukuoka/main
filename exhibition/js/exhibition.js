@@ -25,5 +25,12 @@ new Vue({
     el: '#exhibition',
     data: {
       exhibitionDates: '2020 08.01 ～ 08.31',
+      tagArtCulture: 'アート・カルチャー',
+      tagFashion: 'ファッション',
+      tagAnimal: '動物',
+      tagLandscape: '風景',
+      tagPortlait: 'ポートレート',
+      tagSnap: 'スナップ',
+      tagLive: 'ライブ',
     }
 })

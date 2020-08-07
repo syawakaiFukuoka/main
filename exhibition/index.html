@@ -59,6 +59,13 @@
               <p>福岡で開催される写真展情報を掲載します。</p>
               <p>※SNS等で確認したイベントを掲載しておりますが、もし掲載に問題がある場合は削除対応いたしますのでお知らせください。</p>
             </div>
+            <div class="content__text-block">
+              <ul class="exhibition__list">
+                <li>不定期更新です。</li>
+                <li>画像については使用可能の許可を得た展示のみ掲載します。</li>
+                <li>それぞれの情報エリアをリンクとしておりますので、詳細はそちらをご確認ください。</li>
+              </ul>
+            </div>
 
             <div class="exhibition__area content-area">
               <div class="exhibition__inner">
@@ -68,6 +75,29 @@
                 </div>
 
               <div class="exhibition__container">
+
+                <div class="exhibition__item new">
+                  <a href="https://www.fujifilm.co.jp/photosalon/fukuoka/20082101.html" target="_blank">
+                  <div class="exhibition__item__img">
+                    <img src="img/noimage.gif" alt="no image">
+                  </div>
+                  <div class="exhibition__item__box">
+                    <div class="exhibition__item__box__top">
+                      <h4>第5回矢野敬一写真展<br>「西表島の仲間たち　総集編」</h4>
+                    </div>
+                    <div class="exhibition__item__box__bottom">
+                      <ul>
+                        <li><span class="bold">開催日時</span>：2020.8.21～9.2</li>
+                        <li><span class="bold">場所</span>：富士フイルムフォトサロン 福岡</li>
+                      </ul>
+                    </div>
+                    <ul class="exhibition__tag-item">
+                      <li>{{ tagAnimal }}</li> 
+                      <li>{{ tagLandscape }}</li>
+                    </ul>
+                  </div>
+                 </a>
+                </div>
 
                 <div class="exhibition__item new">
                   <a href="https://art.parco.jp/fukuoka/detail/?id=436" target="_blank">
@@ -85,8 +115,30 @@
                       </ul>
                     </div>
                     <ul class="exhibition__tag-item">
-                      <li>アート・カルチャー</li> 
-                      <li>ファッション</li>
+                      <li>{{ tagArtCulture }}</li> 
+                      <li>{{ tagFashion }}</li>
+                    </ul>
+                  </div>
+                 </a>
+                </div>
+
+                <div class="exhibition__item new">
+                  <a href="https://fotopus.com/showroom/index/detail/c/2906" target="_blank">
+                  <div class="exhibition__item__img">
+                    <img src="img/noimage.gif" alt="no image">
+                  </div>
+                  <div class="exhibition__item__box">
+                    <div class="exhibition__item__box__top">
+                      <h4>正木万博写真展『 エール！ 』</h4>
+                    </div>
+                    <div class="exhibition__item__box__bottom">
+                      <ul>
+                        <li><span class="bold">開催日時</span>：2020.8.3～8.31</li>
+                        <li><span class="bold">場所</span>：　オリンパス福岡サービスステーション　クリエイティブウォール</li>
+                      </ul>
+                    </div>
+                    <ul class="exhibition__tag-item">
+                      <li>{{ tagLive }}</li> 
                     </ul>
                   </div>
                  </a>
@@ -108,7 +160,7 @@
                       </ul>
                     </div>
                     <ul class="exhibition__tag-item">
-                      <li>動物</li> 
+                      <li>{{ tagAnimal }}</li> 
                     </ul>
                   </div>
                  </a>
@@ -130,7 +182,7 @@
                       </ul>
                     </div>
                     <ul class="exhibition__tag-item">
-                      <li>風景</li> 
+                      <li>{{ tagLandscape }}</li> 
                     </ul>
                   </div>
                  </a>
@@ -152,7 +204,7 @@
                       </ul>
                     </div>
                     <ul class="exhibition__tag-item">
-                      <li>風景</li> 
+                      <li>{{ tagLandscape }}</li> 
                     </ul>
                   </div>
                  </a>

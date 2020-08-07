@@ -46,6 +46,18 @@
   padding-top: 2rem;
 }
 
+.exhibition__list {
+  margin-bottom: 30px;
+}
+
+.exhibition__list li {
+  font-size: .8rem;
+  list-style-type: square;
+  margin-left: 1.3rem;
+  margin-bottom: .3rem;
+  color: #808080;
+}
+
 .exhibition__title-block {
   text-align: center;
   margin-bottom: 2rem;
