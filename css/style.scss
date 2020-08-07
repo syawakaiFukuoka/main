@@ -82,7 +82,8 @@ a {
 }
 .header {
   color: #333;
-  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 4px #e7e7e7;
   &__block {
     display: flex;
     align-items: center;
