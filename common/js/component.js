@@ -3,7 +3,7 @@ Vue.component('header-component', {
   template: `
   <header class="header">
   <div class="header__block">
-    <h1><a href="#">写話会福岡</a></h1>
+    <h1><a href="https://syawakaifukuoka.github.io/main/index.html">写話会福岡</a></h1>
   </div>
   <slide right width="400">
     <nav class="sidebar__inner">
@@ -55,6 +55,65 @@ Vue.component('sns-component', {
     </ul>
   </div>`
 })
+
+//moveTop
+Vue.component('movetop-component', {
+  props: ['position'],
+  data() {
+    return {
+        show: false
+    };
+  },
+  template: '<transition name="fade">'+
+  '<button type="button" :style="styles" v-if="show" @click="moveTop"><slot></slot></button>'+
+  '</transition>',
+  methods: {
+    moveTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  },
+  computed: {
+    styles() {
+      let styles = { position: 'fixed' };
+      if(this.position === 'top-left') {
+          styles['top'] = '15%';
+          styles['left'] = '6%';
+      } else if(this.position === 'top-right') {
+          styles['top'] = '15%';
+          styles['right'] = '6%';
+      } else if(this.position === 'bottom-left') {
+          styles['bottom'] = '15%';
+          styles['left'] = '6%';
+      } else {
+          styles['bottom'] = '15%';
+          styles['right'] = '6%';
+      }
+      return styles;
+    }
+  },
+  mounted() {
+    let style = document.createElement('style');
+    style.innerHTML = `
+        .fade-enter-active, .fade-leave-active {
+          transition: opacity .5s;
+        }
+        .fade-enter, .fade-leave-to {
+          opacity: 0;
+        }
+      `;
+      document.getElementsByTagName('head')[0].appendChild(style);
+
+      window.addEventListener('scroll', () => {
+        this.show = (window.scrollY > 150);
+      });
+  },
+
+
+}); 
+
 
 //fadein
 Vue.component('FadeInComponent', {
