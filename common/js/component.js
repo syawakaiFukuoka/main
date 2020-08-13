@@ -10,15 +10,15 @@ Vue.component('header-component', {
       <div class="sidebar__box">
         <h2 class="sidebar__ttl"><a href="https://syawakaifukuoka.github.io/main/index.html">トップページ</a></h2>
         <ul>
-          <li id="menu-about" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#about">ABOUT</a></li>
-          <li id="menu-photo" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#photo">PHOTO?</a></li>
-          <li id="menu-event" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#event">EVENT</a></li>
+          <li id="menu-about" class="sidebar__txt menu-icon"><a href="https://syawakaifukuoka.github.io/main/index.html#about">ABOUT</a></li>
+          <li id="menu-photo" class="sidebar__txt menu-icon"><a href="https://syawakaifukuoka.github.io/main/index.html#photo">PHOTO?</a></li>
+          <li id="menu-event" class="sidebar__txt menu-icon"><a href="https://syawakaifukuoka.github.io/main/index.html#event">EVENT</a></li>
         </ul>
       </div>
       <div class="sidebar__box">
         <h2 class="sidebar__ttl"><a href="https://syawakaifukuoka.github.io/main/exhibition/index.html">福岡の写真展情報</a></h2>
         <ul>
-          <li id="menu-ex" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/exhibition/index.html">EXHIBITION</a></li>
+          <li id="menu-ex" class="sidebar__txt menu-icon"><a href="https://syawakaifukuoka.github.io/main/exhibition/index.html">EXHIBITION</a></li>
         </ul>
       </div>
     </nav>
@@ -33,8 +33,8 @@ Vue.component('footer-component', {
   <footer>
   <p>写話会福岡(しゃわかいふくおか)</p>
   <ul>
-    <li><a href="https://www.instagram.com/shawakai_fukuoka/" target="_blank">instagram</a></li>
     <li><a href="https://twitter.com/maPhotalk" target="_blank">twitter</a></li>
+    <li><a href="https://www.instagram.com/shawakai_fukuoka/" target="_blank">instagram</a></li>
     <li><a href="https://coten.pics/maPhotalk" target="_blank">coten</a></li>
     <li><a href="https://note.com/maphotalk" target="_blank">note</a></li>
   </ul>

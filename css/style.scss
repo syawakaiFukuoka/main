@@ -142,6 +142,9 @@ a {
       opacity: .7;
       transform: scale(1.2) translateX(20px);
     }
+    @include pc {
+      padding-left: 15%;
+    }
   }
   @include pc {
     &__ttl,&__txt {
@@ -150,21 +153,26 @@ a {
   }
 }
 
-#menu-about {
-  background: url(../img/icon_about.svg) no-repeat 100px;
+#menu-about,#menu-photo,#menu-event,#menu-ex {
+  background-position: 30%;
+  background-repeat: no-repeat;
   background-size: contain;
+  @include pc {
+    background-position: 0;
+  }
+} 
+
+#menu-about {
+  background-image: url(../img/icon_about.svg);
 }
 #menu-photo {
-  background: url(../img/icon_photo.svg) no-repeat 100px;
-  background-size: contain;
+  background-image: url(../img/icon_photo.svg);
 }
 #menu-event {
-  background: url(../img/icon_event.svg) no-repeat 100px;
-  background-size: contain;
+  background-image: url(../img/icon_event.svg);
 }
 #menu-ex {
-  background: url(../img/icon_ex.svg) no-repeat 100px;
-  background-size: contain;
+  background-image: url(../img/icon_ex.svg);
 }
 
 /* ----- hamburger ----- */
