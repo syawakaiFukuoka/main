@@ -131,6 +131,7 @@ a {
   &__txt {
     font-size: 20px;
     margin-top: 10px;
+    padding-left: 10%;
     text-align: center;
     transition: .4s;
     a {
@@ -148,6 +149,24 @@ a {
     }
   }
 }
+
+#menu-about {
+  background: url(../img/icon_about.svg) no-repeat 100px;
+  background-size: contain;
+}
+#menu-photo {
+  background: url(../img/icon_photo.svg) no-repeat 100px;
+  background-size: contain;
+}
+#menu-event {
+  background: url(../img/icon_event.svg) no-repeat 100px;
+  background-size: contain;
+}
+#menu-ex {
+  background: url(../img/icon_ex.svg) no-repeat 100px;
+  background-size: contain;
+}
+
 /* ----- hamburger ----- */
 /* vue-burger-menu*/
 .bm-item-list>* {

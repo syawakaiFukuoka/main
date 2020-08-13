@@ -5,20 +5,20 @@ Vue.component('header-component', {
   <div class="header__block">
     <h1><a href="https://syawakaifukuoka.github.io/main/index.html">写話会福岡</a></h1>
   </div>
-  <slide right width="420">
+  <slide right width="400">
     <nav class="sidebar__inner">
       <div class="sidebar__box">
         <h2 class="sidebar__ttl"><a href="https://syawakaifukuoka.github.io/main/index.html">トップページ</a></h2>
         <ul>
-          <li class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#about">ABOUT</a></li>
-          <li class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#photo">PHOTO?</a></li>
-          <li class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#event">EVENT</a></li>
+          <li id="menu-about" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#about">ABOUT</a></li>
+          <li id="menu-photo" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#photo">PHOTO?</a></li>
+          <li id="menu-event" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#event">EVENT</a></li>
         </ul>
       </div>
       <div class="sidebar__box">
         <h2 class="sidebar__ttl"><a href="https://syawakaifukuoka.github.io/main/exhibition/index.html">福岡の写真展情報</a></h2>
         <ul>
-          <li class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/exhibition/index.html">EXHIBITION</a></li>
+          <li id="menu-ex" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/exhibition/index.html">EXHIBITION</a></li>
         </ul>
       </div>
     </nav>
