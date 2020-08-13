@@ -5,7 +5,7 @@ Vue.component('header-component', {
   <div class="header__block">
     <h1><a href="https://syawakaifukuoka.github.io/main/index.html">写話会福岡</a></h1>
   </div>
-  <slide right width="400">
+  <slide right width="420">
     <nav class="sidebar__inner">
       <div class="sidebar__box">
         <h2 class="sidebar__ttl"><a href="https://syawakaifukuoka.github.io/main/index.html">トップページ</a></h2>
@@ -46,15 +46,43 @@ Vue.component('footer-component', {
 
 //sns
 Vue.component('sns-component', {
-  template: `  
-  <div class="sns-area">
+  props: ['position'],
+  data() {
+    return {
+        show: false
+    };
+  },
+  template:'<transition name="fade">'+ `  
+  <div class="sns-area" :style="styles" v-if="show">
     <ul>
       <li><a href="https://twitter.com/maPhotalk" target="_blank"><img src="https://syawakaifukuoka.github.io/main/common/img/sns_1.png" alt="twitterアイコン"></a></li>
       <li><a href="https://www.instagram.com/shawakai_fukuoka/" target="_blank"><img src="https://syawakaifukuoka.github.io/main/common/img/sns_2.png" alt="instagramアイコン"></a></li>
       <li><a href="https://note.com/maphotalk" target="_blank"><img src="https://syawakaifukuoka.github.io/main/common/img/sns_3.png" alt="noteアイコン"></a></li>
     </ul>
-  </div>`
-})
+  </div>`,
+  computed: {
+    styles() {
+      let styles = { position: 'fixed', bottom: '0', left: '0'};
+      return styles;
+    }
+  },
+  mounted() {
+    let style = document.createElement('style');
+    style.innerHTML = `
+        .fade-enter-active, .fade-leave-active {
+          transition: opacity .5s;
+        }
+        .fade-enter, .fade-leave-to {
+          opacity: 0;
+        }
+      `;
+      document.getElementsByTagName('head')[0].appendChild(style);
+
+      window.addEventListener('scroll', () => {
+        this.show = (window.scrollY > 400);
+      });
+   },
+}); 
 
 //moveTop
 Vue.component('movetop-component', {
@@ -107,11 +135,9 @@ Vue.component('movetop-component', {
       document.getElementsByTagName('head')[0].appendChild(style);
 
       window.addEventListener('scroll', () => {
-        this.show = (window.scrollY > 150);
+        this.show = (window.scrollY > 800);
       });
-  },
-
-
+ },
 }); 
 
 
@@ -142,7 +168,6 @@ Vue.component('FadeInComponent', {
     }
   }
 });
-
 
 const {Slide} = window['vue-burger-menu'];
 Vue.component('slide', Slide);

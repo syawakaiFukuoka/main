@@ -110,10 +110,14 @@ a {
 /*sidebar*/
 .sidebar {
   &__inner {
-    margin: 10% auto;
+    margin: 5% auto 10%;
   }
   &__box {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    // &:nth-child(1) {
+    //   padding-bottom: 3rem;
+    //   border-bottom: 1px solid #fff;
+    // }
   }
   &__ttl {
     font-size: 22px;
@@ -135,7 +139,12 @@ a {
     }
     &:hover {
       opacity: .7;
-      transform: scale(1.2);
+      transform: scale(1.2) translateX(20px);
+    }
+  }
+  @include pc {
+    &__ttl,&__txt {
+      text-align: left;
     }
   }
 }
@@ -145,7 +154,12 @@ a {
   display: block!important;
 }
 .bm-menu {
-  background-color: #999!important;
+  background-color: #222!important;
+}
+.bm-item-list {
+  @include sp {
+   margin: 0 auto!important;
+  }
 }
 .bm-burger-button {
   position: fixed;
@@ -159,7 +173,6 @@ a {
     right: 15px !important;
  }
 }
-
 .bm-overlay {
   background: transparent!important;
 }
@@ -171,7 +184,6 @@ a {
 .bm-cross {
   background: #fff!important;
 }
-
 
 /*anker-link */
 #anker-link {
@@ -189,6 +201,7 @@ a {
     writing-mode: vertical-rl;
     display: flex;
     justify-content: space-around;
+    animation: fadeinLeft .9s ease-in 1;
     li {
       font-size: 1rem;
       font-weight: 700;
@@ -198,30 +211,38 @@ a {
         transform: rotate(270deg) translateY(2rem) scale(1.5);
       }
     }
-
   }
   @include sp {
     position: relative;
-    height: 40px;
+    height: 60px;
     justify-content: center;
     ul {
       width: 100%;
       writing-mode: initial;
       align-items: center;
+      border-bottom: 1px solid #e7e7e7;
+      opacity: .7;
         li {
-          font-size: .8rem;
+          font-size: 1rem;
           position: relative;
-          &:not(:last-child)::after {
-            content: "";
-            position: absolute;
-            top: 10%;
-            right: -2rem;
-            border-right: 1px solid #333;
-            height: 90%;
-            transform: rotate(30deg);
+          // &:not(:last-child)::after {
+          //   content: "";
+          //   position: absolute;
+          //   top: 10%;
+          //   right: -2rem;
+          //   border-right: 1px solid #333;
+          //   height: 90%;
+          //   transform: rotate(30deg);
+          // }
+          a {
+            color: transparent;
+            -webkit-text-stroke-color: #000;
+            -webkit-text-stroke-width: 1px;
+            transition: .2s;
           }
           &:hover {
             transform: unset;
+            opacity: 1;
           }
         }
       }
@@ -282,12 +303,12 @@ a {
   &::before {
     content: "特別な知識は要りません。お気軽にご参加ください。";
     z-index: 20;
-    animation: fadeinRitht .9s ease-in 1;
+    animation: fadeinRight .9s ease-in 1;
     right: 80px;
   }
   &::after {
     content: "写話会福岡は、写真についてゆるく話す場です。";
-    animation: fadeinRitht 1s ease-in 1;
+    animation: fadeinRight 1s ease-in 1;
     right: 40px;
   }
 }
@@ -346,21 +367,6 @@ a {
     }
   }
 }
-
-@keyframes fadeinRitht {
-  0% {
-    opacity: 0;
-    transform: translateX(50%);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 /*---------content----------*/
 .main-area {
   width: 100%;
@@ -775,5 +781,34 @@ button {
   }
   &:hover {
     transform: translateY(-20px) rotate(45deg) scale(1.1);
+  }
+}
+
+/* ----- animation keyflames ----- */
+@keyframes fadeinRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeinLeft {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform:  rotateX(0deg);
   }
 }

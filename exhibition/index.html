@@ -47,8 +47,8 @@
   <sns-component></sns-component>
 
   <div class="main-area">
-    <fade-in-component>
-      <section class="content-area">
+    <section class="content-area">
+      <fade-in-component>
         <div class="content-area__outer" id="about">
           <div class="content__title">
             <span>EXHIBITION</span> 
@@ -66,136 +66,137 @@
                 <li>それぞれの情報エリアをリンクとしておりますので、詳細はそちらをご確認ください。</li>
               </ul>
             </div>
+          </div>
+        </div>
+        <fade-in-component>
 
-            <div class="exhibition__area content-area">
-              <div class="exhibition__inner">
-                <div class="exhibition__title-block">
-                  <h3><span class="under-gray">写真展一覧</span></h3> 
-                  <p class="exhibition__dates">{{ exhibitionDates }}</p>
-                </div>
-
-              <div class="exhibition__container">
-
-                <div class="exhibition__item new">
-                  <a href="https://www.fujifilm.co.jp/photosalon/fukuoka/20082101.html" target="_blank">
-                  <div class="exhibition__item__img">
-                    <img src="img/noimage.gif" alt="no image">
-                  </div>
-                  <div class="exhibition__item__box">
-                    <div class="exhibition__item__box__top">
-                      <h4>第5回矢野敬一写真展<br>「西表島の仲間たち　総集編」</h4>
-                    </div>
-                    <div class="exhibition__item__box__bottom">
-                      <ul>
-                        <li><span class="bold">開催日時</span>：2020.8.21～9.2</li>
-                        <li><span class="bold">場所</span>：富士フイルムフォトサロン 福岡</li>
-                      </ul>
-                    </div>
-                    <ul class="exhibition__tag-item">
-                      <li>{{ tagAnimal }}</li> 
-                      <li>{{ tagLandscape }}</li>
-                    </ul>
-                  </div>
-                 </a>
-                </div>
-
-                <div class="exhibition__item new">
-                  <a href="https://art.parco.jp/fukuoka/detail/?id=436" target="_blank">
-                  <div class="exhibition__item__img">
-                    <img src="img/noimage.gif" alt="no image">
-                  </div>
-                  <div class="exhibition__item__box">
-                    <div class="exhibition__item__box__top">
-                      <h4>伊藤万理華<br>EXHIBITION “HOMESICK”</h4>
-                    </div>
-                    <div class="exhibition__item__box__bottom">
-                      <ul>
-                        <li><span class="bold">開催日時</span>：2020.8.7～8.23</li>
-                        <li><span class="bold">場所</span>：福岡パルコ新館2F 特設会場</li>
-                      </ul>
-                    </div>
-                    <ul class="exhibition__tag-item">
-                      <li>{{ tagArtCulture }}</li> 
-                      <li>{{ tagFashion }}</li>
-                    </ul>
-                  </div>
-                 </a>
-                </div>
-
-                <div class="exhibition__item new">
-                  <a href="https://fotopus.com/showroom/index/detail/c/2906" target="_blank">
-                  <div class="exhibition__item__img">
-                    <img src="img/noimage.gif" alt="no image">
-                  </div>
-                  <div class="exhibition__item__box">
-                    <div class="exhibition__item__box__top">
-                      <h4>正木万博写真展『 エール！ 』</h4>
-                    </div>
-                    <div class="exhibition__item__box__bottom">
-                      <ul>
-                        <li><span class="bold">開催日時</span>：2020.8.3～8.31</li>
-                        <li><span class="bold">場所</span>：　オリンパス福岡サービスステーション　クリエイティブウォール</li>
-                      </ul>
-                    </div>
-                    <ul class="exhibition__tag-item">
-                      <li>{{ tagLive }}</li> 
-                    </ul>
-                  </div>
-                 </a>
-                </div>
-
-                <div class="exhibition__item">
-                  <a href="https://twitter.com/damian_kun_/status/1288387749913845762" target="_blank">
-                  <div class="exhibition__item__img">
-                    <img src="img/noimage.gif" alt="no image">
-                  </div>
-                  <div class="exhibition__item__box">
-                    <div class="exhibition__item__box__top">
-                      <h4>カラフル☆廃墟</h4>
-                    </div>
-                    <div class="exhibition__item__box__bottom">
-                      <ul>
-                        <li><span class="bold">開催日時</span>：2020.8.6〜8.18</li>
-                        <li><span class="bold">場所</span>：不思議博物館分室サナトリウム</li>
-                      </ul>
-                    </div>
-                    <ul class="exhibition__tag-item">
-                      <li>{{ tagLandscape }}</li> 
-                    </ul>
-                  </div>
-                 </a>
-                </div>
-
-                <div class="exhibition__item">
-                  <a href="https://twitter.com/k16gou/status/1286942597819142144" target="_blank">
-                  <div class="exhibition__item__img">
-                    <img src="img/noimage.gif" alt="no image">
-                  </div>
-                  <div class="exhibition__item__box">
-                    <div class="exhibition__item__box__top">
-                      <h4>私たちのまちの遺産写真展 2020</h4>
-                    </div>
-                    <div class="exhibition__item__box__bottom">
-                      <ul>
-                        <li><span class="bold">開催日時</span>：2020.8.4〜8.17</li>
-                        <li><span class="bold">場所</span>：パークサイドギャラリー<br>福岡市中央区天神2丁目11番3号 ソラリアターミナルビル1階</li>
-                      </ul>
-                    </div>
-                    <ul class="exhibition__tag-item">
-                      <li>{{ tagLandscape }}</li> 
-                    </ul>
-                  </div>
-                 </a>
-                </div>
-
+        <fade-in-component>
+          <div class="exhibition__area content-area">
+            <div class="exhibition__inner">
+              <div class="exhibition__title-block">
+                <h3><span class="under-gray">写真展一覧</span></h3> 
+                <p class="exhibition__dates">{{ exhibitionDates }}</p>
               </div>
-             </div>
+
+            <div class="exhibition__container">
+
+              <div class="exhibition__item new">
+                <a href="https://www.fujifilm.co.jp/photosalon/fukuoka/20082101.html" target="_blank">
+                <div class="exhibition__item__img">
+                  <img src="img/noimage.gif" alt="no image">
+                </div>
+                <div class="exhibition__item__box">
+                  <div class="exhibition__item__box__top">
+                    <h4>第5回矢野敬一写真展<br>「西表島の仲間たち　総集編」</h4>
+                  </div>
+                  <div class="exhibition__item__box__bottom">
+                    <ul>
+                      <li><span class="bold">開催日時</span>：2020.8.21～9.2</li>
+                      <li><span class="bold">場所</span>：富士フイルムフォトサロン 福岡</li>
+                    </ul>
+                  </div>
+                  <ul class="exhibition__tag-item">
+                    <li>{{ tagAnimal }}</li> 
+                    <li>{{ tagLandscape }}</li>
+                  </ul>
+                </div>
+                </a>
+              </div>
+
+              <div class="exhibition__item new">
+                <a href="https://art.parco.jp/fukuoka/detail/?id=436" target="_blank">
+                <div class="exhibition__item__img">
+                  <img src="img/noimage.gif" alt="no image">
+                </div>
+                <div class="exhibition__item__box">
+                  <div class="exhibition__item__box__top">
+                    <h4>伊藤万理華<br>EXHIBITION “HOMESICK”</h4>
+                  </div>
+                  <div class="exhibition__item__box__bottom">
+                    <ul>
+                      <li><span class="bold">開催日時</span>：2020.8.7～8.23</li>
+                      <li><span class="bold">場所</span>：福岡パルコ新館2F 特設会場</li>
+                    </ul>
+                  </div>
+                  <ul class="exhibition__tag-item">
+                    <li>{{ tagArtCulture }}</li> 
+                    <li>{{ tagFashion }}</li>
+                  </ul>
+                </div>
+                </a>
+              </div>
+
+              <div class="exhibition__item new">
+                <a href="https://fotopus.com/showroom/index/detail/c/2906" target="_blank">
+                <div class="exhibition__item__img">
+                  <img src="img/noimage.gif" alt="no image">
+                </div>
+                <div class="exhibition__item__box">
+                  <div class="exhibition__item__box__top">
+                    <h4>正木万博写真展『 エール！ 』</h4>
+                  </div>
+                  <div class="exhibition__item__box__bottom">
+                    <ul>
+                      <li><span class="bold">開催日時</span>：2020.8.3～8.31</li>
+                      <li><span class="bold">場所</span>：　オリンパス福岡サービスステーション　クリエイティブウォール</li>
+                    </ul>
+                  </div>
+                  <ul class="exhibition__tag-item">
+                    <li>{{ tagLive }}</li> 
+                  </ul>
+                </div>
+                </a>
+              </div>
+
+              <div class="exhibition__item">
+                <a href="https://twitter.com/damian_kun_/status/1288387749913845762" target="_blank">
+                <div class="exhibition__item__img">
+                  <img src="img/noimage.gif" alt="no image">
+                </div>
+                <div class="exhibition__item__box">
+                  <div class="exhibition__item__box__top">
+                    <h4>カラフル☆廃墟</h4>
+                  </div>
+                  <div class="exhibition__item__box__bottom">
+                    <ul>
+                      <li><span class="bold">開催日時</span>：2020.8.6〜8.18</li>
+                      <li><span class="bold">場所</span>：不思議博物館分室サナトリウム</li>
+                    </ul>
+                  </div>
+                  <ul class="exhibition__tag-item">
+                    <li>{{ tagLandscape }}</li> 
+                  </ul>
+                </div>
+                </a>
+              </div>
+
+              <div class="exhibition__item">
+                <a href="https://twitter.com/k16gou/status/1286942597819142144" target="_blank">
+                <div class="exhibition__item__img">
+                  <img src="img/noimage.gif" alt="no image">
+                </div>
+                <div class="exhibition__item__box">
+                  <div class="exhibition__item__box__top">
+                    <h4>私たちのまちの遺産写真展 2020</h4>
+                  </div>
+                  <div class="exhibition__item__box__bottom">
+                    <ul>
+                      <li><span class="bold">開催日時</span>：2020.8.4〜8.17</li>
+                      <li><span class="bold">場所</span>：パークサイドギャラリー<br>福岡市中央区天神2丁目11番3号 ソラリアターミナルビル1階</li>
+                    </ul>
+                  </div>
+                  <ul class="exhibition__tag-item">
+                    <li>{{ tagLandscape }}</li> 
+                  </ul>
+                </div>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
       </section>
-    </fade-in-component>
-  </div>
+    </div>
 
   <movetop-component class="scrBtn"></movetop-component>
   <footer-component></footer-component>
