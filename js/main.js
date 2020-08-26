@@ -3,11 +3,11 @@ window.onload=function(){
     el: '#app',
     //スライダー
     data: {
-      eventTitle: 'Online:Vol.7',
-      // eventVolOn: 'Vol.9',
-      eventVolOff: 'Vol.7',
-      // eventDateOn: '8/8(土) 18:00～',
-      eventDateOff: '2020.7.12～8/31',
+      eventTitle: 'Phot(w)alk 「公園・庭園」',
+      eventVolOn: 'Vol.10',
+      // eventVolOff: 'Vol.7',
+      eventDateOn: '9/12(土) 15:00～',
+      // eventDateOff: '2020.7.12～8/31',
       current_slide: 0,　//追加
       slides: [
         {img: 'img/kv_img01.jpg'},
@@ -23,4 +23,4 @@ window.onload=function(){
           }, 6000)
       }
   })
-} 
+}
