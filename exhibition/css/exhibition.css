@@ -87,7 +87,8 @@
 }
 
 .exhibition__item h4 {
-  font-size: 1rem;
+  font-size: .9rem;
+  line-height: 1.5;
   margin-bottom: .5rem;
   word-break: break-word;
 }
