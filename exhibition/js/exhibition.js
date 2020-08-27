@@ -25,7 +25,7 @@ window.onload=function() {
   new Vue({
       el: '#exhibition',
       data: {
-        exhibitionDates: '2020 08.01 ～ 08.31',
+        exhibitionDates: '2020 08.01 ～ 09.30',
         tagArtCulture: 'アート・カルチャー',
         tagFashion: 'ファッション',
         tagAnimal: '動物',
