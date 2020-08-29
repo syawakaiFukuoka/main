@@ -13,6 +13,9 @@ Vue.component('header-component', {
           <li id="menu-about" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#about">ABOUT</a></li>
           <li id="menu-photo" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#photo">PHOTO?</a></li>
           <li id="menu-event" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#event">EVENT</a></li>
+          <ul>
+            <li id="menu-form" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#form"> ⇒FORM</a>
+          </ul>
         </ul>
       </div>
       <div class="sidebar__box">
