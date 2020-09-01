@@ -134,7 +134,7 @@ a {
     margin: 5% auto 10%;
   }
   &__box {
-    margin-bottom: 3rem;
+    margin-bottom: 4.2rem;
     // &:nth-child(1) {
     //   padding-bottom: 3rem;
     //   border-bottom: 1px solid #fff;
@@ -144,7 +144,7 @@ a {
     font-size: 22px;
     color: #fff;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
     a {
       color: #fff;
     }
@@ -152,7 +152,7 @@ a {
   &__txt {
     font-size: 20px;
     margin-top: 10px;
-    padding-left: 10%;
+    padding-left: 7%;
     text-align: center;
     transition: .4s;
     a {
@@ -200,6 +200,7 @@ a {
 /* vue-burger-menu*/
 .bm-item-list>* {
   display: block!important;
+  width: 100%;
 }
 .bm-menu {
   background-color: #222!important;
@@ -415,6 +416,7 @@ a {
     }
   }
 }
+
 /*---------content----------*/
 .main-area {
   width: 100%;
@@ -522,6 +524,7 @@ a {
 
 .content {
     &__title {
+     width: 100%;
      text-align: center;
      margin-bottom: 7.5rem;
      span {
@@ -540,6 +543,9 @@ a {
         transition: .2s;
         }
       }
+    }
+    &__block {
+      width: 100%;
     }
     &__text-block {
       width: 50vw;
@@ -606,6 +612,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 30px;
       img {
         max-width: 90vw;
         box-shadow: 2px 2px 5px #e6e6e6;
@@ -621,8 +628,13 @@ a {
       margin: 20px auto 40px;
       position: relative;
       text-align: center;
+
       &__block {
         padding: 20px 0;
+        > .bold {
+          margin-bottom : 20px;
+          font-size: 1.8rem;
+        }
         p {
           word-wrap: break-word;
         }

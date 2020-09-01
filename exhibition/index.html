@@ -53,39 +53,43 @@
 
   <div class="main-area">
     <section class="content-area">
-      <fade-in-component>
+      
         <div class="content-area__outer" id="about">
-          <div class="content__title">
-            <span>EXHIBITION</span> 
-            <h2>福岡で開催の写真展情報</h2>
-          </div>
-          <div class="content-area__inner">
-            <div class="content__text-block">
-              <p>福岡で開催される写真展情報を掲載します。</p>
-              <p>※SNS等で確認したイベントを掲載しておりますが、もし掲載に問題がある場合は削除対応いたしますのでお知らせください。</p>
+          <fade-in-component class="content__block">
+            <div class="content__title">
+              <span>EXHIBITION</span> 
+              <h2>福岡で開催の写真展情報</h2>
             </div>
-            <div class="content__text-block">
-              <ul class="exhibition__list">
-                <li>不定期更新です。</li>
-                <li>画像については使用可能の許可を得た展示のみ掲載します。</li>
-                <li>それぞれの情報エリアをリンクとしておりますので、詳細はそちらをご確認ください。</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <fade-in-component>
+          </fade-in-component>
 
-        <fade-in-component>
-          <div class="exhibition__area content-area">
-            <div class="exhibition__inner">
-              <div class="exhibition__title-block">
-                <h3><span class="under-gray">写真展一覧</span></h3> 
-                <p class="exhibition__dates">{{ exhibitionDates }}</p>
+          <fade-in-component class="content__block">
+            <div class="content-area__inner">
+              <div class="content__text-block">
+                <p>福岡で開催される写真展情報を掲載します。</p>
+                <p>※SNS等で確認したイベントを掲載しておりますが、もし掲載に問題がある場合は削除対応いたしますのでお知らせください。</p>
               </div>
+              <div class="content__text-block">
+                <ul class="exhibition__list">
+                  <li>不定期更新です。</li>
+                  <li>画像については使用可能の許可を得た展示のみ掲載します。</li>
+                  <li>それぞれの情報エリアをリンクとしておりますので、詳細はそちらをご確認ください。</li>
+                </ul>
+              </div>
+            </div>
+          </fade-in-component>
+        </div>
+
+        <div class="exhibition__area content-area">
+          <div class="exhibition__inner">
+
+            <fade-in-component class="exhibition__title-block">
+              <h3><span class="under-gray">写真展一覧</span></h3> 
+              <p class="exhibition__dates">{{ exhibitionDates }}</p>
+            </fade-in-component>
 
             <div class="exhibition__container">
 
-              <div class="exhibition__item">
+              <fade-in-component class="exhibition__item">
                 <a href="https://www.kokura-castle.jp/tadashinishimura/2020/07/" target="_blank">
                 <div class="exhibition__item__img">
                   <img src="img/noimage.gif" alt="no image">
@@ -107,9 +111,9 @@
                   </ul>
                 </div>
                 </a>
-              </div>
+              </fade-in-component>
 
-              <div class="exhibition__item">
+              <fade-in-component class="exhibition__item">
                 <a href="https://www.fujifilm.co.jp/photosalon/fukuoka/20082101.html" target="_blank">
                 <div class="exhibition__item__img">
                   <img src="img/noimage.gif" alt="no image">
@@ -131,9 +135,9 @@
                   </ul>
                 </div>
                 </a>
-              </div>
-           
-              <div class="exhibition__item new">
+              </fade-in-component>
+            
+              <fade-in-component class="exhibition__item new">
                 <a href="https://www.fujifilm.co.jp/photosalon/fukuoka/20090401.html" target="_blank">
                 <div class="exhibition__item__img">
                   <img src="img/noimage.gif" alt="no image">
@@ -154,9 +158,9 @@
                   </ul>
                 </div>
                 </a>
-              </div>
+              </fade-in-component>
 
-              <div class="exhibition__item new">
+              <fade-in-component class="exhibition__item new">
                 <a href="https://www.fujifilm.co.jp/photosalon/fukuoka/20091101.html" target="_blank">
                 <div class="exhibition__item__img">
                   <img src="img/noimage.gif" alt="no image">
@@ -179,9 +183,9 @@
                   </ul>
                 </div>
                 </a>
-              </div>
+              </fade-in-component>
 
-              <div class="exhibition__item new">
+              <fade-in-component class="exhibition__item new">
                 <a href="http://faep-jp.com/?p=56509" target="_blank">
                 <div class="exhibition__item__img">
                   <img src="img/noimage.gif" alt="no image">
@@ -203,9 +207,9 @@
                   </ul>
                 </div>
                 </a>
-              </div>
+              </fade-in-component>
               
-              <div class="exhibition__item new">
+              <fade-in-component class="exhibition__item new">
                 <a href="https://www.fujifilm.co.jp/photosalon/fukuoka/20091801.html" target="_blank">
                 <div class="exhibition__item__img">
                   <img src="img/noimage.gif" alt="no image">
@@ -227,9 +231,9 @@
                   </ul>
                 </div>
                 </a>
-              </div>
+              </fade-in-component>
 
-              <div class="exhibition__item new">
+              <fade-in-component class="exhibition__item new">
                 <a href="https://www.fujifilm.co.jp/photosalon/fukuoka/20092501.html" target="_blank">
                 <div class="exhibition__item__img">
                   <img src="img/noimage.gif" alt="no image">
@@ -253,10 +257,12 @@
                   </ul>
                 </div>
                 </a>
-              </div>
-            
-            </div>
-          </div>
+              </fade-in-component>
+          
+           </div>
+
+         </div>
+
         </div>
       </section>
     </div>

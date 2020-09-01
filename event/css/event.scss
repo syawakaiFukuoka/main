@@ -1,0 +1,66 @@
+/*base*/
+$pc: 768px;  // PC
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+$sp: 767px;  // SP
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+
+  }
+}
+
+h1 {
+    margin-left: 0!important;
+}
+.main-area {
+    position: relative;
+}
+.kv-area {
+    width: 100%;
+    img {
+        width:100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.content {
+    &__mv {
+        width: 100vw;
+        height: 400px;
+        background: url(../img/mv_event.jpg) no-repeat;
+        background-position: bottom;
+    }
+    &__title {
+        width: 100%;
+        position: absolute;
+        top: 7%;
+        margin: 0;
+        filter: drop-shadow(2px 2px 8px black);
+        h2 {
+            color: #fff;
+        }
+        span {
+            color: transparent;
+            -webkit-text-stroke-color: #fff;
+            -webkit-text-stroke-width: 1px;
+        }
+        @include sp {
+            h2 {
+                font-size: 2.3rem;
+            }
+            span {
+                font-size: 2.2rem;
+            }
+        }
+    }
+    &__sub-title {
+        h3 {
+            font-size: 1.6rem;
+        }
+    }
+}

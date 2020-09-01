@@ -13,15 +13,18 @@ Vue.component('header-component', {
           <li id="menu-about" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#about">ABOUT</a></li>
           <li id="menu-photo" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#photo">PHOTO?</a></li>
           <li id="menu-event" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#event">EVENT</a></li>
-          <ul>
-            <li id="menu-form" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/index.html#form"> ⇒FORM</a>
-          </ul>
         </ul>
       </div>
       <div class="sidebar__box">
         <h2 class="sidebar__ttl"><a href="https://syawakaifukuoka.github.io/main/exhibition/index.html">福岡の写真展情報</a></h2>
         <ul>
           <li id="menu-ex" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/exhibition/index.html">EXHIBITION</a></li>
+        </ul>
+      </div>
+      <div class="sidebar__box">
+        <h2 class="sidebar__ttl"><a href="{{ eventUrl }}">開催予定のイベント</a></h2>
+        <ul>
+          <li id="menu-event" class="sidebar__txt"><a href="{{ eventUrl }}">EVENT</a></li>
         </ul>
       </div>
     </nav>

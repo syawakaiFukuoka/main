@@ -1,4 +1,8 @@
 /*base*/
+h1 {
+  margin-left: 0 !important;
+}
+
 .new {
   position: relative;
   display: block;

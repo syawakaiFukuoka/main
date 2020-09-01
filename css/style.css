@@ -145,14 +145,14 @@ a:hover {
 }
 
 .sidebar__box {
-  margin-bottom: 3rem;
+  margin-bottom: 4.2rem;
 }
 
 .sidebar__ttl {
   font-size: 22px;
   color: #fff;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 
 .sidebar__ttl a {
@@ -162,7 +162,7 @@ a:hover {
 .sidebar__txt {
   font-size: 20px;
   margin-top: 10px;
-  padding-left: 10%;
+  padding-left: 7%;
   text-align: center;
   transition: .4s;
 }
@@ -221,6 +221,7 @@ a:hover {
 /* vue-burger-menu*/
 .bm-item-list > * {
   display: block !important;
+  width: 100%;
 }
 
 .bm-menu {
@@ -570,6 +571,7 @@ a:hover {
 }
 
 .content__title {
+  width: 100%;
   text-align: center;
   margin-bottom: 7.5rem;
 }
@@ -590,6 +592,10 @@ a:hover {
 .content__title span:hover {
   letter-spacing: 1.3rem;
   transition: .2s;
+}
+
+.content__block {
+  width: 100%;
 }
 
 .content__text-block {
@@ -665,6 +671,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .content__event-img img {
@@ -687,6 +694,11 @@ a:hover {
 
 .content__event-title__block {
   padding: 20px 0;
+}
+
+.content__event-title__block > .bold {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 
 .content__event-title__block p {

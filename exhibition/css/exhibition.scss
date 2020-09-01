@@ -11,6 +11,10 @@ $sp: 767px;  // SP
     @content;
   }
 }
+h1 {
+    margin-left: 0!important;
+}
+
 .new{
     position:relative;
     display:block;
