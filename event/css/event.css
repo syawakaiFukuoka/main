@@ -54,3 +54,7 @@ h1 {
 .content__sub-title h3 {
   font-size: 1.6rem;
 }
+
+.content__block {
+  margin-bottom: 80px;
+}

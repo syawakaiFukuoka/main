@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta discription="写話会福岡, 福岡市内で毎月第一土曜日を目安に、テーマを決めて写真について話す会です。オンラインでの投稿企画も実施しています。撮影イベントなども！カメラはスマホしかない方、写真に詳しくない方も歓迎！">
+  <meta property="og:url" content="https://syawakaifukuoka.github.io/main/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="写話会福岡、開催予定のイベント情報ページです。" />
+  <meta property="og:site_name" content="写話会福岡ウェブサイト - 開催イベント情報" />
+  <meta property="og:image" content="https://syawakaifukuoka.github.io/main/event/img/ogp_event.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="https://syawakaifukuoka.github.io/main/index.html" />
+  <meta name="twitter:image" content="https://syawakaifukuoka.github.io/main/event/img/ogp_event.jpg" />
+  <meta name="twitter:title" content="写話会福岡">
+  <title>写話会福岡-top</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/event.css">
+  <link rel="shortcut icon" href=".././../common/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-burger-menu@2.0.3/dist/vue-burger-menu.umd.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="./../common/js/component.js"></script>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'qua5vwq',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+<body>
+
+<div id="app">
+  <header-component></header-component>
+  <sns-component></sns-component>
+
+  <div class="main-area">
+    
+    <div class="content__mv">
+      <div class="content__title">
+        <span>EVENT</span>
+        <h2>開催予定のイベント</h2>
+      </div>
+    </div>
+
+    <div class="content-area__outer">
+
+      <fade-in-component class="content__block">
+        <div class="content__sub-title">
+          <h3><span class="under-gray">これまでの実施イベント</span></h3>
+        </div>
+      </fade-in-component>  
+
+      <div class="content__block">
+        <fade-in-component class="content__event-img">
+          <img src="../img/event_img03.jpg" alt="写話会の詳細"　loading="lazy">
+        </fade-in-component>
+        <fade-in-component class="content__event-title">
+          <div class="content__event-title__block">
+            <h3>PhotWalk Vol.10</h3>
+            <p class="bold">「公園・庭園」</p>
+            <p>開催日: 2020/ 9/12(土) 15:00～</p>
+          </div>
+        </fade-in-component>
+      </div>
+      
+      <div class="content__block">
+        <fade-in-component class="content__event-img">
+          <img src="../img/event_img02.jpg" alt="写話会の詳細"　loading="lazy">
+        </fade-in-component>
+        <fade-in-component class="content__event-title">
+          <div class="content__event-title__block">
+            <h3>PhotWalk Vol.9</h3>
+            <p class="bold">「アウトドア」</p>
+            <p>開催日: 2020/ 8/8(土) 18:00～</p>
+          </div>
+        </fade-in-component>
+      </div>
+
+  </div>
+  <movetop-component class="scrBtn"></movetop-component>
+  <footer-component></footer-component>
+
+</div>
+</body>
+</html>
