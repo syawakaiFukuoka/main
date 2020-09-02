@@ -1,9 +1,10 @@
+@charset "UTF-8";
 /*base*/
 h1 {
   margin-left: 0 !important;
 }
 
-.new {
+.new, .hold, .end, .beHold {
   position: relative;
   display: block;
   width: 240px;
@@ -12,33 +13,75 @@ h1 {
   overflow: visible;
 }
 
-.new:before, .new:after {
+.new:before, .new:after, .hold:before, .hold:after, .end:before, .end:after, .beHold:before, .beHold:after {
   display: block;
   position: absolute;
   right: -8px;
   z-index: 10;
 }
 
-.new:before {
+.new:before, .hold:before, .end:before, .beHold:before {
   content: "";
   border: 4px solid transparent;
-  border-top-color: #4686F2;
-  border-left-color: #4686F2;
   top: 14px;
 }
 
-.new:after {
-  content: "New!";
+.new:after, .hold:after, .end:after, .beHold:after {
   font-weight: bold;
   font-family: 'Helvetica', 'sans-serif';
-  background: #4686F2;
   color: #fff;
-  padding: 0 6px 0 14px;
   height: 24px;
   line-height: 24px;
   top: -10px;
   font-size: .8rem;
+}
+
+.new:before {
+  border-top-color: #4686F2;
+  border-left-color: #4686F2;
+}
+
+.new:after {
+  content: "新着";
+  background: #4686F2;
+  padding: 0 6px 0 14px;
   letter-spacing: 0.25rem;
+}
+
+.hold:before {
+  border-top-color: #E6A15A;
+  border-left-color: #E6A15A;
+}
+
+.hold:after {
+  content: "開催中";
+  background: #E6A15A;
+  padding: 0 6px 0 14px;
+  letter-spacing: 0.25rem;
+}
+
+.beHold:before {
+  border-top-color: #767676;
+  border-left-color: #767676;
+}
+
+.beHold:after {
+  content: "開催前";
+  background: #767676;
+  padding: 0 6px 0 10px;
+  letter-spacing: 0.15rem;
+}
+
+.end:before {
+  border-top-color: #FF1A1A;
+  border-left-color: #FF1A1A;
+}
+
+.end:after {
+  content: "終了直前";
+  background: #FF1A1A;
+  padding: 0 6px 0 10px;
+  letter-spacing: 0.15rem;
 }
 
 .exhibition__area {
