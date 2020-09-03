@@ -67,8 +67,24 @@ p {
   }
 }
 
+<<<<<<< HEAD:css/style.css
+<<<<<<< HEAD
 .bold {
   font-weight: bold;
+}
+
+.bg-grey {
+  background: #fafafa;
+=======
+.mt60 {
+  margin-top: 60px;
+}
+
+=======
+>>>>>>> origin/master:common/css/common.css
+.bold {
+  font-weight: bold;
+>>>>>>> parent of 887ff3c... [Add] V4.2.0(directory fixed)
 }
 
 .bg-grey {
@@ -472,6 +488,34 @@ a:hover {
   }
 }
 
+<<<<<<< HEAD:css/style.css
+<<<<<<< HEAD
+=======
+.tag-item {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 5rem;
+}
+
+.tag-item li {
+  font-size: .8rem;
+  padding: 5px 10px;
+  border-radius: 12px;
+  background: #4686F2;
+  color: #fff;
+}
+
+.tag-item :not(:last-child) {
+  margin-right: 10px;
+}
+
+.bg-grey {
+  background: #fafafa;
+}
+
+>>>>>>> parent of 887ff3c... [Add] V4.2.0(directory fixed)
+=======
+>>>>>>> origin/master:common/css/common.css
 .about-content {
   position: relative;
   display: flex;
@@ -552,7 +596,14 @@ a:hover {
   width: 100%;
   text-align: center;
   margin-bottom: 7.5rem;
+<<<<<<< HEAD:css/style.css
+<<<<<<< HEAD
   animation: ttlAnim .7s ease-in 1;
+=======
+>>>>>>> parent of 887ff3c... [Add] V4.2.0(directory fixed)
+=======
+  animation: ttlAnim .7s ease-in 1;
+>>>>>>> origin/master:common/css/common.css
 }
 
 .content__title span {
@@ -574,7 +625,15 @@ a:hover {
 }
 
 .content__block {
+<<<<<<< HEAD:css/style.css
+<<<<<<< HEAD
   margin: 0 auto;
+=======
+  width: 100%;
+>>>>>>> parent of 887ff3c... [Add] V4.2.0(directory fixed)
+=======
+  margin: 0 auto;
+>>>>>>> origin/master:common/css/common.css
 }
 
 .content__text-block {
@@ -646,7 +705,15 @@ a:hover {
 }
 
 .content__event-img {
+<<<<<<< HEAD:css/style.css
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 100vw;
+>>>>>>> parent of 887ff3c... [Add] V4.2.0(directory fixed)
+=======
+  width: 100%;
+>>>>>>> origin/master:common/css/common.css
   display: flex;
   justify-content: center;
   align-items: center;
@@ -874,13 +941,29 @@ footer .copyright {
 
 /* ----- fadein ----- */
 .fadeIn {
+<<<<<<< HEAD:css/style.css
+<<<<<<< HEAD
   animation: fadeIn 1.2s;
+=======
+  animation: fadeIn 1.4s;
+>>>>>>> parent of 887ff3c... [Add] V4.2.0(directory fixed)
+=======
+  animation: fadeIn 1.2s;
+>>>>>>> origin/master:common/css/common.css
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+<<<<<<< HEAD:css/style.css
+<<<<<<< HEAD
     transform: translateY(30px);
+=======
+    transform: translateY(60px);
+>>>>>>> parent of 887ff3c... [Add] V4.2.0(directory fixed)
+=======
+    transform: translateY(30px);
+>>>>>>> origin/master:common/css/common.css
   }
   100% {
     opacity: 1;
