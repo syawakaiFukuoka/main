@@ -5,23 +5,24 @@
   <meta discription="写話会福岡, 福岡市内で毎月第一土曜日を目安に、テーマを決めて写真について話す会です。オンラインでの投稿企画も実施しています。撮影イベントなども！カメラはスマホしかない方、写真に詳しくない方も歓迎！">
   <meta property="og:url" content="https://syawakaifukuoka.github.io/main/index.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="写真についてゆるく話す会、写話会福岡のウェブサイトです。" />
-  <meta property="og:site_name" content="写話会福岡ウェブサイト" />
-  <meta property="og:image" content="https://syawakaifukuoka.github.io/main/common/img/ogp_img.jpg" />
+  <meta property="og:description" content="写話会福岡、開催予定のイベント情報ページです。" />
+  <meta property="og:site_name" content="写話会福岡ウェブサイト - 開催イベント情報" />
+  <meta property="og:image" content="https://syawakaifukuoka.github.io/main/event/img/ogp_event.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="https://syawakaifukuoka.github.io/main/index.html" />
-  <meta name="twitter:image" content="https://syawakaifukuoka.github.io/main/common/img/ogp_img.jpg" />
+  <meta name="twitter:image" content="https://syawakaifukuoka.github.io/main/event/img/ogp_event.jpg" />
   <meta name="twitter:title" content="写話会福岡">
   <title>写話会福岡-top</title>
-  <link rel="stylesheet" href="common/css/reset.css">
-  <link rel="stylesheet" href="common/css/style.css">
-  <link rel="shortcut icon" href="./common/img/favicon.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/event.css">
+  <link rel="shortcut icon" href=".././../common/img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue-burger-menu@2.0.3/dist/vue-burger-menu.umd.js"></script>
-  <script src="js/main.js"></script>
-  <script src="common/js/component.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="./../common/js/component.js"></script>
   <script>
     (function(d) {
       var config = {
@@ -32,15 +33,6 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D12QGBC69P"></script>
-   <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-
-     gtag('config', 'G-D12QGBC69P');
-   </script>
 </head>
 <body>
 
@@ -48,132 +40,69 @@
   <header-component></header-component>
   <sns-component></sns-component>
 
-  <div class="slider-outer">
-    <transition name="fade">
-      <div class="slider-inner" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
-        <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img" width="100" height="100">
-      </div>
-    </transition>
-  </div>
-
-  <div id="anker-link">
-    <!-- <slide class="sp"> -->
-    <ul>
-      <li>
-        <a href="#about">
-          <span>ABOUT</span>
-        </a>
-      </li>
-      <li>
-        <a href="#photo">
-          <span>PHOTO?</span>
-        </a>
-      </li>
-      <li>
-        <a href="#event">
-          <span>EVENT</span>
-        </a>
-      </li>
-    </ul>
-  <!-- <slide> -->
-  </div>
-
-  <sns-component></sns-component>
-
   <div class="main-area">
-    <section class="content-area">
+    
+    <div class="content__mv">
+      <div class="content__title">
+        <span>EVENT</span>
+        <h2>実施イベント</h2>
+      </div>
+    </div>
 
-      <div class="content-area__outer" id="about">
-        <fade-in-component> 
-          <div class="content__title">
-            <span>ABOUT</span>
-            <h2>写話会福岡について</h2>
-          </div>
-        </fade-in-component>
+    <div class="content-area__outer backnumber">
 
-        <div class="about-content content__block">
-          <div class="content__text-block">
-            <fade-in-component>
-              <p>あらゆる時間、あらゆる場所で目にする写真。</p>
-            </fade-in-component>
-            <fade-in-component>
-              <p>絶え間なく流れるタイムラインのように、1枚の写真をじっくり眺める機会は少なくなっているかもしれません。<br>
-                「いいね」だけで終わらず、じっくりと写真について話すことができれば、と考え写話会という場をつくりました。</p>
-            </fade-in-component>
-            <fade-in-component>
-              <p><span class="bold">専門知識はなくても大丈夫。</span>写真に興味がある、話を楽しみたい、人の話を聞いてみたい、という方ならどなたでも歓迎します。</p>
-            </fade-in-component>
-          </div>
-          <fade-in-component>
-            <div class="content__image-container">
-              <img src="img/content_img_01.jpg" alt="イメージ画像" loading="lazy">
-              <img src="img/content_img_02.jpg" alt="イメージ画像" loading="lazy">
-            </div>
-          </fade-in-component>
+      <fade-in-component>
+        <div class="content__sub-title">
+          <h3><span class="under-gray">これまでの実施イベント</span></h3>
         </div>
+      </fade-in-component>  
 
-      </div>
-    </section>
+      <fade-in-component class="content__text-block content__block">
+          <p>写話会福岡では都度テーマを決めて<span class="bold">カフェに集まっての談話、フォトウォーク、オンライン投稿企画</span>などを実施しております。<br>このページは過去実施した企画の概要です。</p>
+      </fade-in-component>
 
-    <fade-in-component class="content-area">
-      <div class="content-area__outer bg-grey content__block" id="photo">
-        <fade-in-component> 
-          <div class="content__title">
-            <span>PHOTO?</span>
-            <h2>「写真」について</h2>
+      <div class="content__block">
+        <fade-in-component class="content__event-img">
+          <a href="https://syawakaifukuoka.github.io/main/event/2020/09.html">
+            <img src="../img/event_img03.jpg" alt="写話会の詳細"　loading="lazy">
+          </a>
+        </fade-in-component>
+        <fade-in-component class="content__event-title">
+          <div class="content__event-title__block">
+            <h3>PhotWalk Vol.10</h3>
+            <p class="bold">「公園・庭園」</p>
+            <p>開催予定日: 2020/ 9/12(土) 15:00～</p>
           </div>
         </fade-in-component>
-
-        <fade-in-component  class="content__text-block">
-          <p>ご持参いただく写真の種類は<span class="bold">「プリント紙に印刷されたもの」以外</span>でも大丈夫です。<br>たとえば、下記などを想定しています。</p>
-        </fade-in-component>
-
-        <fade-in-component class="content__list-block">
-          <p><span class="under-gray">ご持参写真の一例</span></p>
-          <ul>
-            <li>プリントされた写真</li>
-            <li>雑誌、写真集、図版、など紙媒体・印刷物</li>
-            <li>PC・タブレットやスマートフォンなどデバイス内にある電子媒体の写真/画像</li>
-            <li>SNSで公開された写真/画像</li>
-          </ul>
-        </fade-in-component>
-
-        <fade-in-component class="content__text-block">
-          <p>他にも<span class="under">「これは写真だな」とお考えになったもの</span>を自由にご持参ください。</p>
-          <p class="bold">※情勢を鑑みて2020年は活動内容を「フォトウォーク」に変更しております。年内は通常形式での写話会は行いません。</p>
-        </fade-in-component>
       </div>
-    </fade-in-component>
-
-    <fade-in-component class="content-area">
-
-      <div class="content-area__outer" id="event">
-
-        <fade-in-component> 
-          <div class="content__title">
-            <span>EVENT</span>
-            <h2>開催予定のイベント</h2>
+      
+      <div class="content__block">
+        <fade-in-component class="content__event-img">
+          <img src="../img/event_img02.jpg" alt="写話会の詳細"　loading="lazy">
+        </fade-in-component>
+        <fade-in-component class="content__event-title">
+          <div class="content__event-title__block">
+            <h3>PhotWalk Vol.9</h3>
+            <p class="bold">「アウトドア」</p>
+            <p>開催日: 2020/ 8/8(土) 18:00～</p>
           </div>
         </fade-in-component>
-
-        <div class="content__block">
-          <fade-in-component class="content__event-img">
-            <img src="img/event_img03.jpg" alt="写話会の詳細"　loading="lazy">
-          </fade-in-component>
-            
-          <fade-in-component class="content__text-block">
-            <p>⇒お申込み・詳細の確認はイベントページよりお願いします。</p>
-            <div class="content__button">
-              <button tabindex="0" role="button" onclick="window.open('https://syawakaifukuoka.github.io/main/event/2020/09.html','_blank')">
-                 詳細をみる
-              </button>
-            </div>
-          </fade-in-component>
-        </div>
-
       </div>
 
-    </fade-in-component>
+      <div class="content__block">
+        <fade-in-component class="content__event-img">
+          <img src="../img/event_img01.jpg" alt="写話会の詳細"　loading="lazy">
+        </fade-in-component>
+        <fade-in-component class="content__event-title">
+          <div class="content__event-title__block">
+            <h3>Online Vol.6</h3>
+            <p class="bold">「雨模様」</p>
+            <p>開催日: 2020/ 梅雨期間中</p>
+            <p>Twitter/Instagram 投稿企画</p>
+          </div>
+        </fade-in-component>
+      </div>
+
   </div>
   <movetop-component class="scrBtn"></movetop-component>
   <footer-component></footer-component>
