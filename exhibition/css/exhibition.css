@@ -1,7 +1,63 @@
 @charset "UTF-8";
-/*base*/
 h1 {
   margin-left: 0 !important;
+}
+
+.main-area {
+  position: relative;
+}
+
+.kv-area {
+  width: 100%;
+}
+
+.kv-area img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.content__mv {
+  width: 100%;
+  height: 400px;
+  background: url(../img/mv_exhibition.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content__title {
+  width: 100%;
+  position: absolute;
+  top: 6%;
+  margin: 0;
+  filter: drop-shadow(1px 1px 2px #222);
+}
+
+.content__title h2 {
+  color: #fff;
+}
+
+.content__title span {
+  color: transparent;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1px;
+}
+
+@media (max-width: 767px) {
+  .content__title {
+    top: 3%;
+  }
+  .content__title h2, .content__title span {
+    font-size: 2.1rem;
+  }
+}
+
+.content__sub-title h3 {
+  font-size: 1.6rem;
+}
+
+.content__block {
+  margin-bottom: 80px;
 }
 
 .new, .hold, .end, .beHold {
@@ -91,10 +147,6 @@ h1 {
 .exhibition__area h3 {
   font-size: 2rem;
   padding-top: 2rem;
-}
-
-.exhibition__list {
-  margin-bottom: 30px;
 }
 
 .exhibition__list li {

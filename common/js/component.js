@@ -22,11 +22,15 @@ Vue.component('header-component', {
         </ul>
       </div>
       <div class="sidebar__box">
-        <h2 class="sidebar__ttl"><a href="https://syawakaifukuoka.github.io/main/event/index.html">開催予定のイベント</a></h2>
+        <h2 class="sidebar__ttl"><a href="https://syawakaifukuoka.github.io/main/event/index.html">実施イベント</a></h2>
         <ul>
-          <li id="menu-event" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/event/index.html">EVENT</a></li>
+          <li id="menu-event" class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/event/index.html">EVENT INFO</a></li>
           <ul>
-            <li class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/event/2020/09.html">⇒ 2020/09</a></li>
+            <li class="sidebar__txt">開催予定イベント</li>
+              <ul>
+                <li class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/event/2020/09.html">⇒2020/09</a></li>
+              </ul>
+            </li>
           </ul>
         </ul>
       </div>
