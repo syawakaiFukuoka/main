@@ -13,8 +13,8 @@
   <meta name="twitter:image" content="https://syawakaifukuoka.github.io/main/common/img/ogp_img.jpg" />
   <meta name="twitter:title" content="写話会福岡">
   <title>写話会福岡-top</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="common/css/reset.css">
+  <link rel="stylesheet" href="common/css/style.css">
   <link rel="shortcut icon" href="./common/img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -48,7 +48,7 @@
   <header-component></header-component>
   <sns-component></sns-component>
 
-  <div class="kv-area slider-outer">
+  <div class="slider-outer">
     <transition name="fade">
       <div class="slider-inner" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
         <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img" width="100" height="100">
@@ -84,7 +84,7 @@
     <section class="content-area">
 
       <div class="content-area__outer" id="about">
-        <fade-in-component class="content__block"> 
+        <fade-in-component> 
           <div class="content__title">
             <span>ABOUT</span>
             <h2>写話会福岡について</h2>
@@ -117,9 +117,11 @@
 
     <fade-in-component class="content-area">
       <div class="content-area__outer bg-grey content__block" id="photo">
-        <fade-in-component class="content__title">
-          <span>PHOTO?</span>
-          <h2>「写真」について</h2>
+        <fade-in-component> 
+          <div class="content__title">
+            <span>PHOTO?</span>
+            <h2>「写真」について</h2>
+          </div>
         </fade-in-component>
 
         <fade-in-component  class="content__text-block">
@@ -147,9 +149,11 @@
 
       <div class="content-area__outer" id="event">
 
-        <fade-in-component class="content__title">
-          <span>EVENT</span>
-          <h2>開催予定のイベント</h2>
+        <fade-in-component> 
+          <div class="content__title">
+            <span>EVENT</span>
+            <h2>開催予定のイベント</h2>
+          </div>
         </fade-in-component>
 
         <div class="content__block">

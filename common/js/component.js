@@ -178,5 +178,6 @@ Vue.component('FadeInComponent', {
   }
 });
 
+
 const {Slide} = window['vue-burger-menu'];
 Vue.component('slide', Slide);
