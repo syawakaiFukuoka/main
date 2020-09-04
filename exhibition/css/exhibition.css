@@ -218,8 +218,15 @@ h1 {
 
 .exhibition__item__box__top {
   margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
+  padding: 1rem 0;
   border-bottom: 2px solid #e7e7e7;
+  min-height: 70px;
+}
+
+@media (max-width: 767px) {
+  .exhibition__item__box__top {
+    min-height: 0;
+  }
 }
 
 .exhibition__item__box__bottom {
@@ -262,13 +269,5 @@ h1 {
   }
   .exhibition__item h4 {
     margin-top: 2rem;
-  }
-  .exhibition__item__img {
-    width: calc(100% / 2);
-    align-items: center;
-    display: flex;
-  }
-  .exhibition__item__box {
-    width: calc(100% / 2);
   }
 }
