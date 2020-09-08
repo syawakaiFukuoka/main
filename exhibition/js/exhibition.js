@@ -26,13 +26,16 @@ window.onload=function() {
       el: '#exhibition',
       data: {
         exhibitionDates: '2020 09.01 ～ 09.30',
-        tagArtCulture: 'アート・カルチャー',
+        tagArt: 'アート',
+        tagCulture: 'カルチャー',
         tagFashion: 'ファッション',
         tagAnimal: '動物',
         tagLandscape: '風景',
+        tagNature: '自然',
         tagPortlait: 'ポートレート',
         tagSnap: 'スナップ',
         tagLive: 'ライブ',
+        tagMemory: '記録',
       }
   })
 }
