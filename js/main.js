@@ -7,7 +7,7 @@ window.onload=function(){
       eventVolOn: 'Vol.10',
       eventUrl: 'https://syawakaifukuoka.github.io/main/event/2020/09.html',
       // eventVolOff: 'Vol.7',
-      eventDateOn: '9/12(土) 15:00～',
+      eventDateOn: '9/26(土) 15:00～',
       // eventDateOff: '2020.7.12～8/31',
       current_slide: 0,　//追加
       slides: [
