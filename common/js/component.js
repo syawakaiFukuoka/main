@@ -29,6 +29,7 @@ Vue.component('header-component', {
             <li class="sidebar__txt">開催予定イベント</li>
               <ul>
                 <li class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/event/2020/09.html">⇒2020/09</a></li>
+                <li class="sidebar__txt"><a href="https://syawakaifukuoka.github.io/main/event/2020/10.html">⇒2020/10</a></li>
               </ul>
             </li>
           </ul>
